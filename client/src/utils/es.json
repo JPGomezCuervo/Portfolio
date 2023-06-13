@@ -33,7 +33,16 @@
     "contactMe": {
         "title": "Contáctame",
         "subtitle": "¿Tienes algun proyecto?",
-        "description": "Prepara tu traje espacial y cuéntame tus ideas para desarrollar la aplicación de tus sueños."
+        "description": "Prepara tu traje espacial y cuéntame tus ideas para desarrollar la aplicación de tus sueños.",
+        "form": {
+            "name": "Nombre",
+            "namePlaceHolder": "Juan Pablo",
+            "email": "Correo Electrónico",
+            "emailPlaceHolder": "johndoe@gmail.com",
+            "message": "Mensaje",
+            "messagePlaceHolder": "Tu mensaje",
+            "button": "Enviar correo"
+        }
     }
 
 }

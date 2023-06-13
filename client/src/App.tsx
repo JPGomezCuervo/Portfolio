@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Summary from './components/Summary/Summary';
 import WhoIAm from './components/WhoIAm/WhoIAm';
+import ContactMe from './components/ContactMe/ContactMe';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <NavBar/>
       <Summary/>
       <WhoIAm/>
+      <ContactMe/>
       
     </div>
   );

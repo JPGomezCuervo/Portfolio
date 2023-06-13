@@ -45,6 +45,15 @@ interface LanguageType <T> {
       title: T;
       subtitle: T;
       description: T;
+      form: {
+        name: T;
+        namePlaceHolder: T;
+        email: T;
+        emailPlaceHolder: T;
+        message: T;
+        messagePlaceHolder: T;
+        button: T
+      }
     };
   }
   
