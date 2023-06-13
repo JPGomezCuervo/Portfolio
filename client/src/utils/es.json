@@ -1,0 +1,39 @@
+{
+    "navBar": {
+        "projects": "Proyectos",
+        "contactMe": "Contáctame",
+        "whoIAm": "¿Quién soy?"
+    },
+    "summary": {
+        "title": "¡Hola Mundo!",
+        "description": "Soy Juan, un apasionado desarrollador web radicado en Colombia." 
+    },
+    "whoIAm": {
+        "firstView": {
+            "title": "Who I am",
+            "description": "Soy un desarrollador web full stack interesado en la eficiencia del código y la creación de experiencias UI/UX elegantes."
+        },
+        "secondView": {
+            "title": "Tecnologies"
+        },
+        "thirdView": {
+            "title": "Experience",
+            "description": "Soy graduado del bootcamp de Henry ( +800 horas) y estoy ansioso por aplicar todos mis conocimientos en una empresa de tecnología. Mi formación como historiador me permite leer infinidad de artículos y libros sobre cualquier tema sin dificultad, una habilidad que utilizo a diario para aprender, actualizar y perfeccionar mis habilidades como desarrollador."
+        }
+    },
+    "projects": {
+        "firstView": {
+            "title": "Proyectos"
+        },
+        "muscleLab": {
+            "title": "MuscleLab",
+            "description": "Muscle Lab es una página web diseñada para gestionar un gimnasio ficticio. Cuenta con métodos de pago integrados, programación de citas, interfaces fáciles de usar y un panel de administración que permite a los administradores configurar y modificar varios aspectos del gimnasio, como las clases, las ubicaciones, las afiliaciones, los entrenadores y mucho más."
+        }
+    },
+    "contactMe": {
+        "title": "Contáctame",
+        "subtitle": "¿Tienes algun proyecto?",
+        "description": "Prepara tu traje espacial y cuéntame tus ideas para desarrollar la aplicación de tus sueños."
+    }
+
+}
