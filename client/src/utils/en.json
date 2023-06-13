@@ -1,0 +1,39 @@
+{
+    "navBar": {
+        "projects": "Proyects",
+        "contactMe": "Contact me",
+        "whoIAm": "Who I am"
+    },
+    "summary": {
+        "title": "Hello World!",
+        "description": "I am Juan, a passionate web developer based in Colombia." 
+    },
+    "whoIAm": {
+        "firstView": {
+            "title": "Who I am",
+            "description": "I am a full stack web developer with a strong focus on code efficiency and creating elegant UI/UX experiences.."
+        },
+        "secondView": {
+            "title": "Tecnologies"
+        },
+        "thirdView": {
+            "title": "Experience",
+            "description": "I am a graduate of Henry's bootcamp ( +800 hours) and am eager to apply all my knowledge in a technology company. My background as a historian allows me to read endless papers and books on any subject without difficulty, a skill I use daily to learn, update, and refine my skills as a developer."
+        }
+    },
+    "projects": {
+        "firstView": {
+            "title": "Projects"
+        },
+        "muscleLab": {
+            "title": "MuscleLab",
+            "description": "Muscle Lab is a web page designed to manage a fictional gym. It features embedded payment methods, appointment scheduling, user-friendly interfaces, and an admin dashboard that allows administrators to set and modify various aspects of the gym, including lessons, locations, memberships, trainers, and more."
+        }
+    },
+    "contactMe": {
+        "title": "Contact me",
+        "subtitle": "Got a problem to solve?",
+        "description": "Get your space suit ready and tell me your ideas to develop your dream application."
+    }
+
+}
