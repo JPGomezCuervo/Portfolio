@@ -1,0 +1,49 @@
+.Header {
+    position: fixed;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    box-shadow: 0 .4rem 0.4rem rgba(99, 99, 99, 0.6);;
+}
+
+.Header ul {
+    list-style: none;
+    display: flex;
+}
+.Header ul li {
+    margin-left: 5rem;
+    font-family: "Montserrat-Bold";
+    margin-top: 1.5rem;
+}
+
+.Logo {
+    background-color: black;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    height: 2rem;
+}
+
+.Logo h2 {
+    color: white;
+    font-family: "Montserrat-ExtraBold";
+    font-size: 1.3rem;
+    margin: 0 auto;
+    margin-top: .2rem;
+    
+}
+
+.LogosContainer {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.LogosContainer img {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    height: 3rem;
+}
