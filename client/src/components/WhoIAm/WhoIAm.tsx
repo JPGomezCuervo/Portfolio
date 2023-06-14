@@ -9,23 +9,26 @@ const WhoIAm: FC = () => {
     const language = useSelector(selectLanguageJson);
     const { title, description } = language.whoIAm.firstView;
     return (
-        <div className={style.MainContainer}>
+        <section className={style.MetaContainer}>
+            <div className={style.MainContainer}>
 
-            <div className={style.LeftContainer}>
-                <h2>
-                    {title}
-                </h2>
-                <img src={image} alt=""/>
+                <div className={style.LeftContainer}>
+                    <h2>
+                        {title}
+                    </h2>
+                    <img src={image} alt=""/>
+                </div>
+
+                <div className={style.RightContainer}>
+                    <h3>
+                        {description}
+                    </h3>
+
+                </div>
+
             </div>
 
-            <div className={style.RightContainer}>
-                <h3>
-                    {description}
-                </h3>
-
-            </div>
-
-        </div>
+        </section>
     )
 }
 

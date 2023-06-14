@@ -8,7 +8,7 @@ const ContactMe: FC = () => {
     const language = useSelector(selectLanguageJson);
     const { title, subtitle, description, form } = language.contactMe;
     return (
-        <div className={style.MainContainer}>
+        <section className={style.MainContainer}>
 
             <div className={style.LeftContainer}>
 
@@ -27,20 +27,27 @@ const ContactMe: FC = () => {
 
             <div className={style.RightContainer}>
                 <form className={style.FormContainer}>
-                    <label htmlFor="nameInput">{form.name}</label>
-                    <input type="text" name="nameInput" placeholder={form.namePlaceHolder}/>
 
-                    <label htmlFor="nameInput">{form.email}</label>
-                    <input type="text" name="emailInput" placeholder={form.emailPlaceHolder}/>
+                    <div className={style.InputContainer}>
+                        <label htmlFor="nameInput">{form.name}</label>
+                        <input type="text" name="nameInput" placeholder={form.namePlaceHolder}/>
+                    </div>
 
-                    <label htmlFor="nameInput">{form.message}</label>
-                    <input type="text" name="messageInput" placeholder={form.messagePlaceHolder}/>
+                    <div className={style.InputContainer}>
+                        <label htmlFor="nameInput">{form.email}</label>
+                        <input type="text" name="emailInput" placeholder={form.emailPlaceHolder}/>
+                    </div>
+
+                    <div className={style.InputContainer}>
+                        <label htmlFor= "messageInput">{form.message}</label>
+                        <textarea name= "messageInput" placeholder={form.messagePlaceHolder}></textarea>
+                    </div>
 
                     <button>{form.button}</button>
                 </form>
 
             </div>
-        </div>
+        </section>
     )
 }
 

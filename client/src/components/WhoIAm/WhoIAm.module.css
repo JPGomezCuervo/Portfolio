@@ -1,5 +1,11 @@
 .MainContainer {
     display: flex;
+    background-color: white ;
+}
+
+.MetaContainer {
+    background-color: transparent;
+    padding-top: 50rem;
 }
 
 .LeftContainer {

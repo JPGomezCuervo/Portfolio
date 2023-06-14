@@ -1,6 +1,7 @@
 .MainContainer {
     background-color: #6F4AE7;
     display: flex;
+    padding-bottom: 4rem;
 }
 
 .LeftContainer {
@@ -11,11 +12,11 @@
 .LeftContainer h2 {
     font-family: "Montserrat-ExtraBold";
     color: white;
-    font-size:3rem;
+    font-size:3.5rem;
     font-weight: 200;
-    padding-top: 3rem;
+    padding-top: 1rem;
     margin-right: 10rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     text-align: left;
     
 }
@@ -45,18 +46,71 @@
 }
 
 .FormContainer {
+
     background-color: white;
     display: flex;
     flex-direction: column;
     height: 69vh;
     box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.2);
-    border-radius: .4rem;
-    padding-top: 1rem;
+    border-radius: 1rem;
+    padding: 2.5rem;
+    justify-content: space-between;
+    margin-top: 4rem;
+    
 }
 
-.FormContainer label {
-    text-align: left;
-}
 .FormContainer input {
-    margin-bottom: 4rem;
+    padding: .2rem;
+    padding-left: 1rem;
+    border-radius: .6rem;
+    border: 0;
+    background-color: #f3f3f3;
+}
+
+.InputContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+}
+
+
+.InputContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+
+}
+
+
+
+
+.InputContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 1rem;
+
+}
+
+.InputContainer textarea {
+    padding: .2rem;
+    padding-left: 1rem;
+    border-radius: .6rem;
+    border: 0;
+    background-color: #f3f3f3;
+}
+
+.FormContainer button {
+    width: 10rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: .3rem;
+    padding: .2rem;
+    border: 2px solid #6F4AE7;
+    color: #6F4AE7;
+    font-family: "Montserrat-Bold";
+    font-size: 1rem;
+    font-weight: 100;
 }

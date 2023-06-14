@@ -4,6 +4,8 @@
     width: 100vw;
     padding-top: 6rem;
     display: flex;
+    position: fixed;
+    z-index: -1;
 }
 
 .LeftContainer {
