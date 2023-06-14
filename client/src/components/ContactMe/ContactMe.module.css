@@ -67,34 +67,24 @@
     background-color: #f3f3f3;
 }
 
-.InputContainer {
+.InputContainer  {
     display: flex;
     flex-direction: column;
     text-align: left;
     gap: 1rem;
 }
 
-
-.InputContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 1rem;
-
+.InputContainer label {
+    font-family: "Montserrat-Bold";
+    font-size: .9rem;
 }
 
-
-
-
-.InputContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    gap: 1rem;
-
+.InputContainer input {
+    font-family: "Montserrat-Regular";
+    height: 2.2rem;
 }
 
-.InputContainer textarea {
+.InputContainer  textarea {
     padding: .2rem;
     padding-left: 1rem;
     border-radius: .6rem;

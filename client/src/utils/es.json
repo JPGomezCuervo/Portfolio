@@ -40,7 +40,7 @@
             "email": "Correo Electrónico",
             "emailPlaceHolder": "johndoe@gmail.com",
             "message": "Mensaje",
-            "messagePlaceHolder": "Tu mensaje",
+            "messagePlaceHolder": "Tu mensaje...",
             "button": "Enviar correo"
         }
     }
