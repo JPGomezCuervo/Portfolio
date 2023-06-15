@@ -1,0 +1,22 @@
+.Carousel {
+    display: flex;
+    overflow-y: hidden;
+    
+}
+
+.Background {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding-right: 4rem;
+    padding-bottom: 1rem;
+}
+.Rombos {
+    display: block;
+    width: .6rem;
+    height: .6rem;
+    background-color: transparent; /* Cambia el color aquí */
+    transform: rotate(45deg);
+    margin-left: 1rem;
+    border: 2px solid black;
+}

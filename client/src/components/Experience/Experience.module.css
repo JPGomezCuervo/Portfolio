@@ -21,25 +21,25 @@
     font-family: "Montserrat-ExtraBold";
     font-size:3rem;
     font-weight: 200;
-    margin-left: 5.3rem;
-    text-align: left;
+    margin-right: 10rem;
+    margin-bottom: 0;
     
 }
 
 .LeftContainer img {
-    height: 24rem;
+    height: 28rem;
+    
 }
 
 .RightContainer {
-    width: 50%;
+    width: 60%;
 }
 .RightContainer h3 {
-    font-family: "Montserrat-Medium";
-    padding-top: 11rem;
-    margin: 0 auto;
+    font-family: "Montserrat-Regular";
+    padding-top: 10rem;
     padding-left: 2rem;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
     text-align: left;
     font-weight: 200;
-    width: 60%;
+    width: 85%;
 }

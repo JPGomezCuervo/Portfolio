@@ -1,0 +1,16 @@
+{
+    "frontEnd": [
+        "Javascript",
+        "Typescript",
+        "CSS",
+        "HTML",
+        "Redux.js",
+        "React.js"
+    ],
+    "backEnd": [
+        "Express.js",
+        "Node.js",
+        "PostgreSQL",
+        "Sequelize"
+    ]
+}
