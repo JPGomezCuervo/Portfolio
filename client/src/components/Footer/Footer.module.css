@@ -1,0 +1,47 @@
+.Footer {
+    height: fit-content;
+    background-color: white;
+    padding: .5rem;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.Footer  h3 {
+    font-family: "Montserrat-SemiBold";
+    margin-left: 2rem;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.Footer ul {
+    list-style: none;
+    font-family: "Montserrat-Regular";
+    font-size: .9rem;
+
+}
+
+.Footer h2 {
+    font-family: "Montserrat-Light";
+    font-size: .8rem;
+    color: #787878;
+}
+
+.Footer li {
+    margin-bottom: .5rem;
+}
+
+.LogosContainer {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.LogosContainer img {
+    height: 2.3rem;
+    margin-left: 2%;
+}
+
+.Container {
+    border-radius: .1rem;
+    border-top: 3px solid #6F4AE7;
+    display: flex;
+    justify-content: space-evenly;  
+}

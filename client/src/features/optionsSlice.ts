@@ -54,7 +54,15 @@ interface LanguageType <T> {
         messagePlaceHolder: T;
         button: T
       }
-    };
+    },
+    footer: {
+      navigation: T;
+      projects: T;
+      contactMe: T;
+      whoIAm: T;
+      socialMedia: T;
+
+    }
   }
   
 

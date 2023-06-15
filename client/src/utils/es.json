@@ -43,6 +43,14 @@
             "messagePlaceHolder": "Tu mensaje...",
             "button": "Enviar correo"
         }
+    },
+
+    "footer": {
+        "navigation": "Navegación",
+        "projects": "Proyectos",
+        "contactMe": "Contáctame",
+        "whoIAm": "¿Quién soy?",
+        "socialMedia": "Redes Sociales"
     }
 
 }

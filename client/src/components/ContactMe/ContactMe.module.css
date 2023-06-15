@@ -2,6 +2,7 @@
     background-color: #6F4AE7;
     display: flex;
     padding-bottom: 4rem;
+    box-shadow: 0px -4px 6px -3px rgba(0, 0, 0, 0.5);
 }
 
 .LeftContainer {
