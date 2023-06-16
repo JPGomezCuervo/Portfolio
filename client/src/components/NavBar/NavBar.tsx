@@ -5,21 +5,41 @@ import style from "./NavBar.module.css";
 import gmailIcon from "../../assets/icons/gmail.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
+import  URLJson from "../../utils/links.json";
 
 interface NavBarPropsType {
     handleProjectClick: ()=> void;
     handleWhoIAmClick: ()=> void;
     handleContactMeClick: ()=> void;
 }
+interface URLType {
+    github: string;
+    linkedin: string;
+    gmail: string;
+}
 
 const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, handleWhoIAmClick}) => {
 
     const language = useSelector(selectLanguageJson);
+    const URLs: URLType = URLJson;
     const {projects, contactMe, whoIAm} = language.navBar;
+
+    const handleLogoClick = () => {
+
+        window.scrollTo({
+            top:0,
+            left:0,
+            behavior: "smooth"
+        })
+        setTimeout(() =>{
+            window.location.reload();
+
+        }, 200)
+    }
     return (
         <header className={style.Header}>
 
-            <div className={style.Logo}>
+            <div className={style.Logo} onClick={handleLogoClick}>
                 <h2>https:// Juan Gómez</h2>
             </div>
 
@@ -30,9 +50,15 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
             </ul>
 
             <div className={style.LogosContainer}>
-                <img src={githubIcon} alt=""/>
-                <img src={linkedinIcon} alt=""/>
-                <img src={gmailIcon} alt=""/>
+                <a href={URLs.github} target="blank">
+                    <img src={githubIcon} alt=""/>
+                </a>
+                <a href={URLs.linkedin} target="blank">
+                    <img src={linkedinIcon} alt=""/>
+                </a>
+                <a href={`mailto: ${URLs.gmail}`} target="blank">
+                    <img src={gmailIcon} alt=""/>
+                </a>
             </div>
         </header>
     )
