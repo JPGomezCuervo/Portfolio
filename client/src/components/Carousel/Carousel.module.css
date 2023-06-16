@@ -24,9 +24,9 @@
 }
 
 .Rombos.ActiveIndex {
-    border: 2px solid #FD6439;
-    /* border: 2px solid #6F4AE7;
-    background-color: #6F4AE7; */
+    /* border: 2px solid #FD6439; */
+     border: 2px solid #6F4AE7;
+    /* background-color: #6F4AE7;  */
 
     
 }

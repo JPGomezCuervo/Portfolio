@@ -32,7 +32,13 @@
     width: 100%;
     align-items: center;
     cursor: pointer;
+    transition: .8s;
 }
+
+.Portfolio:hover {
+    height: 15rem;
+}
+
 .Portfolio h2 {
     margin-left: 24%;
     font-size: 2.5rem;
@@ -45,6 +51,12 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    transition: .8s;
+}
+
+.MuscleLab:hover {
+    height: 15rem;
+
 }
 
 
@@ -68,7 +80,7 @@
 .MuscleLab .IconWeight{
     position: absolute;
     height: 4rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-left: 52%;
 }
 
@@ -78,8 +90,15 @@
     width: 100%;
     display: flex;
     cursor: pointer;
+    transition: .8s;
+    align-items: center;
 
 }
+
+.DoggoFinder:hover {
+    height: 15rem;
+}
+
 
 .DoggoFinder img {
     height: 7.5rem;
@@ -93,7 +112,7 @@
     font-family: 'Montserrat-ExtraBold';
     align-items: center;
     margin-left: 44%;
-    margin-top: 6.2rem;
+    margin-top: 9rem;
     transform: rotate(-90deg);
     font-size: 2.5rem;
 }
