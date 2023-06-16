@@ -18,6 +18,7 @@
 
 .Header li {
     min-width: 7rem;
+    cursor: pointer;
 }
 
 .Logo {

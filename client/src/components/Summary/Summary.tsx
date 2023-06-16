@@ -11,7 +11,7 @@ const Summary: FC = () => {
 
 
     return (
-        <section className={style.MainContainer}>
+        <div className={style.MainContainer}>
             <div className={style.LeftContainer}>
                 <h1>
                     {title}
@@ -23,7 +23,7 @@ const Summary: FC = () => {
             <div className={style.RightContainer}>
                 <img src={photograph} alt=""/>
             </div>
-        </section>
+        </div>
     )
 }
 

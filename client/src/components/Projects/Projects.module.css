@@ -14,7 +14,7 @@
     margin-right: 10rem;
     padding-left: 6rem;
     text-align: left;
-    margin-top: .5rem;
+    margin-top: .9rem;
 }
 
 .MainContainer .Portfolio h2 {
@@ -32,7 +32,7 @@
     width: 100%;
     align-items: center;
     cursor: pointer;
-    transition: .8s;
+    transition: .5s;
 }
 
 .Portfolio:hover {
@@ -51,7 +51,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    transition: .8s;
+    transition: .5s;
 }
 
 .MuscleLab:hover {
@@ -90,8 +90,8 @@
     width: 100%;
     display: flex;
     cursor: pointer;
-    transition: .8s;
     align-items: center;
+    transition: .5s;
 
 }
 

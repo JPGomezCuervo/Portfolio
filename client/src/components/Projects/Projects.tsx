@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 import style from "./Projects.module.css";
 import { useSelector } from "react-redux";
 import { selectLanguageJson } from "../../features/optionsSlice";
@@ -6,12 +6,13 @@ import manIcon from "../../assets/icons/projects/man-silhouette.png";
 import dumbBell from "../../assets/icons/projects/dumbbell.png";
 import pawIcon from "../../assets/icons/projects/paw_logo_icon.png";
 
+
 const Projects: FC = () => {
 
     const language = useSelector(selectLanguageJson);
     const { title } = language.projects.firstView;
     return (
-        <section className={style.MainContainer}>
+        <div className={style.MainContainer}>
 
             <h2>{title}</h2>
             <div className={style.BarsContainer}>
@@ -45,7 +46,7 @@ const Projects: FC = () => {
                 </div>
 
             </div>
-        </section>
+        </div>
     )
 }
 

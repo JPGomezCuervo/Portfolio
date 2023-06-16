@@ -3,12 +3,14 @@ import style from "./ContactMe.module.css";
 import { useSelector } from "react-redux";
 import { selectLanguageJson } from "../../features/optionsSlice";
 
+
+
 const ContactMe: FC = () => {
 
     const language = useSelector(selectLanguageJson);
     const { title, subtitle, description, form } = language.contactMe;
     return (
-        <section className={style.MainContainer}>
+        <div className={style.MainContainer}>
 
             <div className={style.LeftContainer}>
 
@@ -47,7 +49,7 @@ const ContactMe: FC = () => {
                 </form>
 
             </div>
-        </section>
+        </div>
     )
 }
 
