@@ -1,6 +1,8 @@
 .Carousel {
-    display: flex;
+    display: inline-flex;
     overflow-y: hidden;
+    transition: transform .3s;
+    flex-wrap: nowrap;
     
 }
 
@@ -9,14 +11,22 @@
     display: flex;
     justify-content: center;
     padding-right: 4rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.2rem;
 }
 .Rombos {
     display: block;
     width: .6rem;
     height: .6rem;
-    background-color: transparent; /* Cambia el color aquí */
+    background-color: transparent;
     transform: rotate(45deg);
     margin-left: 1rem;
     border: 2px solid black;
+}
+
+.Rombos.ActiveIndex {
+    border: 2px solid #FD6439;
+    /* border: 2px solid #6F4AE7;
+    background-color: #6F4AE7; */
+
+    
 }
