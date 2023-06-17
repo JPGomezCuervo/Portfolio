@@ -5,6 +5,7 @@ import { selectLanguageJson } from "../../features/optionsSlice";
 import emailjs from "@emailjs/browser"
 import { useState } from "react";
 import { useRef } from "react";
+import validation from "./validation";
 
 
 const ContactMe: FC = () => {
@@ -24,6 +25,12 @@ const ContactMe: FC = () => {
     const [ messageInput, setMessageInput ] = useState("");
     const [ successfullyResponse, setSuccessfullyResponse ] = useState("");
     const [ rejectedResponse, setRejectedResponse ] = useState("");
+    const [ isAble, setIsAble ] = useState(false);
+    const [ errors, setErrors ] = useState({
+        name: '',
+        email: '',
+        message: ''
+    })
 
     const sendEmail = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
@@ -52,14 +59,17 @@ const ContactMe: FC = () => {
         switch (name) {
             case "nameInput":
                 setNameInput(value);
+                validation(name, value, errors, language);
                 break;
 
             case "emailInput":
                 setEmailInput(value);
+                validation(name, value, errors, language);
                 break;
 
             case "messageInput":
-                setMessageInput(value)
+                setMessageInput(value);
+                validation(name, value, errors, language);
                 break;
                 
             default: 

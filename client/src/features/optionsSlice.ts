@@ -9,7 +9,7 @@ interface optionState {
     darkMode: boolean;
 } 
 
-interface LanguageType <T> {
+export interface LanguageType <T> {
     navBar: {
       projects: T;
       contactMe: T;
@@ -66,8 +66,25 @@ interface LanguageType <T> {
       successfullyResponse: T;
       rejectedResponse: T;
       button: T;
+      errors: {
+        name: {
+          required: T;
+          minLength: T;
+          maxLength: T;
+          letters: T;
+        },
+        email: {
+          required: T;
+          email: T;
+        },
+        message: {
+          required: T;
+          minLength: T;
+          maxLength: T;
+        }
+      }
     }
-  }
+}
 
   
 

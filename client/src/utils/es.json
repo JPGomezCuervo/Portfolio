@@ -55,7 +55,24 @@
     "messages": {
         "successfullyResponse": "Mensaje enviado",
         "rejectedResponse" : "Ups, algo salió mal",
-        "button": "Hecho"
+        "button": "Hecho",
+        "errors": {
+            "name": {
+              "required": "¡Se requiere el nombre!",
+              "minLength": "¡El nombre debe tener al menos 3 caracteres!",
+              "maxLength": "¡El nombre debe tener menos de 10 caracteres!",
+              "letters": "¡El nombre debe contener solo letras!"
+            },
+            "email": {
+              "required": "¡Se requiere el correo electrónico!",
+              "email": "¡El correo electrónico debe ser una dirección válida!"
+            },
+            "message": {
+              "required": "¡Se requiere el mensaje!",
+              "minLength": "¡El mensaje debe tener al menos 10 caracteres!",
+              "maxLength": "¡El mensaje debe tener menos de 100 caracteres!"
+            }
+          }
     }
 
 }
