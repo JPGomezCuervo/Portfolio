@@ -48,7 +48,7 @@ function App() {
     if (contactMeClick && contactMeRef.current) {
       const elementRect = contactMeRef.current.getBoundingClientRect();
       const absoluteElementTop = elementRect.top + window.pageYOffset;
-      const offset = 85;
+      const offset = 50;
   
       window.scroll({
         top: absoluteElementTop - offset,

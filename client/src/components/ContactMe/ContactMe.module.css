@@ -3,11 +3,13 @@
     display: flex;
     padding-bottom: 4rem;
     box-shadow: 0px -4px 6px -3px rgba(0, 0, 0, 0.5);
+    height: 90vh;
 }
 
 .LeftContainer {
     width: 50%;
     margin-left: 6rem;
+    padding-top: 1.5rem;
 }
 
 .LeftContainer h2 {
@@ -51,7 +53,8 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 69vh;
+    height: 62vh;
+    width: 35vw;
     box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     padding: 2.5rem;
@@ -104,4 +107,69 @@
     font-family: "Montserrat-Bold";
     font-size: 1rem;
     font-weight: 100;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.FormContainer button:hover {
+    background-color: #6F4AE7;
+    color: white;
+}
+.FormContainer button:active {
+    background-color:white;
+    color:#6F4AE7;
+}
+
+.ModalContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 99;
+    background-color: white;
+    height: 66vh;
+    width: 36vw;
+    top: -70vh;
+    left: 1.9vw;
+    justify-content: center;
+}
+
+.Modal {
+    font-family: "Montserrat-Bold";
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+    color:  #6F4AE7; 
+}
+.ModalContainer img {
+    height: 4rem;
+    width: 4rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.ModalContainer button {
+    width: 8rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: .3rem;
+    padding: .2rem;
+    border: 2px solid #6F4AE7;
+    color: #6F4AE7;
+    font-family: "Montserrat-Bold";
+    font-size: 1.2rem;
+    font-weight: 100;
+    transition: .2s;
+    cursor: pointer;
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+}
+
+.ModalContainer button:hover {
+    background-color: #6F4AE7;
+    color: white;
+}
+.ModalContainer button:active {
+    background-color: white;
+    color: #6F4AE7;
 }

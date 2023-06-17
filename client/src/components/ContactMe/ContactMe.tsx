@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser"
 import { useState } from "react";
 import { useRef } from "react";
 
+
 const ContactMe: FC = () => {
 
     const EMAIL_JS_API = process.env.REACT_APP_EMAIL_JS_API || "";
@@ -26,7 +27,6 @@ const ContactMe: FC = () => {
 
     const sendEmail = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
-        console.log(formEmail.current);
         
         if (!EMAIL_JS_API || !EMAIL_JS_TEMPLATE || !EMAIL_JS_KEY) {
             console.log('An unexpected error just occurred');
@@ -39,10 +39,9 @@ const ContactMe: FC = () => {
         }
     
         emailjs.sendForm(EMAIL_JS_API, EMAIL_JS_TEMPLATE, formEmail.current, EMAIL_JS_KEY)
-        .then((response) => console.log(response.status, response.text))
-        .catch((error) => console.log(error));
+        .then((response) => setSuccessfullyResponse(language.messages.successfullyResponse))
+        .catch((error) => setRejectedResponse(language.messages.rejectedResponse));
 
-        console.log('mensaje enviado correctamente');
         
     } 
 
@@ -67,6 +66,11 @@ const ContactMe: FC = () => {
                 return;
         }
     }
+    const clearInput = () => {
+        setNameInput("");
+        setEmailInput("");
+        setMessageInput("");
+    };
 
     return (
         <div className={style.MainContainer}>
@@ -105,7 +109,32 @@ const ContactMe: FC = () => {
                     </div>
 
                     <button onClick={sendEmail}>{form.button}</button>
+
+
                 </form>
+                        {       
+                        rejectedResponse &&
+                            <div className={style.ModalContainer}>
+                                <div className={style.Modal}>
+                                    <p>{language.messages.rejectedResponse}</p>
+                                </div>
+                                <button onClick={() => {
+                                    setRejectedResponse("");
+                                }}>{language.messages.button}</button>
+                            </div>
+                        }
+                        {
+                        successfullyResponse &&
+                            <div className={style.ModalContainer}>
+                                <div className={style.Modal}>
+                                    <p>{language.messages.successfullyResponse}</p>
+                                </div>
+                                <button onClick={()=> {
+                                    setSuccessfullyResponse("");
+                                    clearInput();
+                                }}>{language.messages.button}</button>
+                            </div>
+                        }
 
             </div>
         </div>

@@ -51,6 +51,11 @@
         "contactMe": "Contáctame",
         "whoIAm": "¿Quién soy?",
         "socialMedia": "Redes Sociales"
+    },
+    "messages": {
+        "successfullyResponse": "Mensaje enviado",
+        "rejectedResponse" : "Ups, algo salió mal",
+        "button": "Hecho"
     }
 
 }

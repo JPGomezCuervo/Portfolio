@@ -61,7 +61,11 @@ interface LanguageType <T> {
       contactMe: T;
       whoIAm: T;
       socialMedia: T;
-
+    },
+    messages: {
+      successfullyResponse: T;
+      rejectedResponse: T;
+      button: T;
     }
   }
 

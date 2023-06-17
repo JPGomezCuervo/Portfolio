@@ -50,6 +50,12 @@
         "contactMe": "Contact me",
         "whoIAm": "Who I am",
         "socialMedia": "Social Media"
+    },
+
+    "messages": {
+        "successfullyResponse": "Message sent",
+        "rejectedResponse" : "Oops, something went wrong :(",
+        "button": "Done"
     }
 
 
