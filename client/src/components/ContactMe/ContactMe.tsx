@@ -33,19 +33,32 @@ const ContactMe: FC = () => {
     const sendEmail = (event: React.MouseEvent<HTMLButtonElement>) => {
         event.preventDefault();
         
-        if (!EMAIL_JS_API || !EMAIL_JS_TEMPLATE || !EMAIL_JS_KEY) {
-            console.log('An unexpected error just occurred');
+        if (!isAble && Object.values(errors).every(x => x === '')) {
+            setErrors({
+                name: language.messages.errors.name.required,
+                email: language.messages.errors.email.required,
+                message: language.messages.errors.message.required
+            })
             return;
         }
-    
-        if (!formEmail.current) {
-            console.log('Form reference is not available');
-            return;
+
+        if(isAble) {
+
+            if (!EMAIL_JS_API || !EMAIL_JS_TEMPLATE || !EMAIL_JS_KEY) {
+                console.log('An unexpected error just occurred');
+                return;
+            }
+        
+            if (!formEmail.current) {
+                console.log('Form reference is not available');
+                return;
+            }
+        
+            emailjs.sendForm(EMAIL_JS_API, EMAIL_JS_TEMPLATE, formEmail.current, EMAIL_JS_KEY)
+            .then((response) => setSuccessfullyResponse(language.messages.successfullyResponse))
+            .catch((error) => setRejectedResponse(language.messages.rejectedResponse));
         }
-    
-        emailjs.sendForm(EMAIL_JS_API, EMAIL_JS_TEMPLATE, formEmail.current, EMAIL_JS_KEY)
-        .then((response) => setSuccessfullyResponse(language.messages.successfullyResponse))
-        .catch((error) => setRejectedResponse(language.messages.rejectedResponse));
+        
 
         
     } 
@@ -123,7 +136,7 @@ const ContactMe: FC = () => {
                     </div>
                     {errors.message && <p className={style.Error}>{errors.message}</p>}
 
-                    <button onClick={sendEmail} disabled={!isAble}>{form.button}</button>
+                    <button onClick={sendEmail} >{form.button}</button>
 
 
                 </form>
