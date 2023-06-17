@@ -5,18 +5,39 @@ import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import { useSelector } from "react-redux";
 import { selectLanguageJson } from "../../features/optionsSlice";
+import  URLJson from "../../utils/links.json";
 
-const Footer: FC = () => {
+interface NavBarPropsType {
+    handleProjectClick: ()=> void;
+    handleWhoIAmClick: ()=> void;
+    handleContactMeClick: ()=> void;
+}
+
+interface URLType {
+    github: string;
+    linkedin: string;
+    gmail: string;
+}
+
+const Footer: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, handleWhoIAmClick}) => {
 
     const language = useSelector(selectLanguageJson);
+    const URLs: URLType = URLJson;
     const { navigation, projects, contactMe, whoIAm, socialMedia} = language.footer;
+
     return (
         <footer className={style.Footer}>
             <div className={style.LogosContainer}>
 
-                <img src={githubIcon} alt=""/>
-                <img src={linkedinIcon} alt=""/>
-                <img src={gmailIcon} alt=""/>
+                <a href={URLs.github} target="_blank" rel="noreferrer">
+                    <img src={githubIcon} alt=""/>
+                </a>
+                <a href={URLs.linkedin} target="_blank" rel="noreferrer">
+                    <img src={linkedinIcon} alt=""/>
+                </a>
+                <a href={`mailto: ${URLs.gmail}`} target="_blank" rel="noreferrer">
+                    <img src={gmailIcon} alt=""/>
+                </a>
 
             </div>
 
@@ -25,18 +46,26 @@ const Footer: FC = () => {
                 <div className={style.Navigation}>
                     <h3>{navigation}</h3>
                     <ul>
-                        <li>{projects}</li>
-                        <li>{contactMe}</li>
-                        <li>{whoIAm}</li>
+                        <li onClick={handleWhoIAmClick}>{whoIAm}</li>
+                        <li onClick={handleProjectClick}>{projects}</li>
+                        <li onClick={handleContactMeClick}>{contactMe}</li>
                     </ul>
                 </div>
 
                 <div className={style.SocialMedia}>
                     <h3>{socialMedia}</h3>
                     <ul>
-                        <li>GitHub</li>
-                        <li>Linkedin</li>
-                        <li>Gmail</li>
+                        <a href={URLs.github} target="_blank" rel="noreferrer">
+                            <li>GitHub</li>
+                        </a>
+
+                        <a href={URLs.linkedin} target="_blank" rel="noreferrer">
+                            <li>Linkedin</li>
+                        </a>
+
+                        <a href={`mailto: ${URLs.gmail}`} target="_blank" rel="noreferrer">
+                            <li>Gmail</li>
+                        </a>
                     </ul>
 
                 </div>

@@ -94,7 +94,7 @@ function App() {
         <ContactMe/>
       </section>
 
-      <Footer/>
+      <Footer handleProjectClick={handleProjectClick} handleContactMeClick={handleContactMeClick} handleWhoIAmClick={handleWhoIAmClick}/>
       
     </div>
   );

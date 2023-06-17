@@ -10,10 +10,11 @@
         const [activeIndex, setActiveIndex] = useState(0);
 
         const items = [
-            <WhoIAm/>,
-            <Tecnologies/>,
-            <Experience/>
-        ];
+            { key: "whoiam", component: <WhoIAm /> },
+            { key: "tecnologies", component: <Tecnologies /> },
+            { key: "experience", component: <Experience /> }
+          ];
+          
 
         const updateIndex = (newIndex: number) => {
             if (newIndex < 0) {
@@ -28,25 +29,23 @@
 
         return (
             <>
-            <div className={style.Carousel}
-                style={{transform: `translateX(-${activeIndex * 33.2}%)`}}>
+                <div className={style.Carousel} style={{ transform: `translateX(-${activeIndex * 33.2}%)` }}>
+                    {items.map((item) => (
+                        <div key={item.key}>{item.component}</div>
+                    ))}
+                </div>
 
-                {items.map((element) => {
-                    return element;
-                })}
-
-            </div>
-            <div className={style.Background}>
-                <div className={`${style.Rombos} ${activeIndex === 0 ? style.ActiveIndex : ""}`} onClick={()=> {
-                    updateIndex(0);
-                }}></div>
-                <div className={`${style.Rombos} ${activeIndex === 1 ? style.ActiveIndex : ""}`} onClick={() => {
-                    updateIndex(1);
-                }}></div>
-                <div className={`${style.Rombos} ${activeIndex === 2 ? style.ActiveIndex : ""}`} onClick={()=> {
-                    updateIndex(2);
-                }}></div>
-            </div>
+                <div className={style.Background}>
+                    <div className={`${style.Rombos} ${activeIndex === 0 ? style.ActiveIndex : ""}`} onClick={()=> {
+                        updateIndex(0);
+                    }}></div>
+                    <div className={`${style.Rombos} ${activeIndex === 1 ? style.ActiveIndex : ""}`} onClick={() => {
+                        updateIndex(1);
+                    }}></div>
+                    <div className={`${style.Rombos} ${activeIndex === 2 ? style.ActiveIndex : ""}`} onClick={()=> {
+                        updateIndex(2);
+                    }}></div>
+                </div>
             </>
         )
     }

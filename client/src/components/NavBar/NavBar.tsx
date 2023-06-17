@@ -44,19 +44,19 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
             </div>
 
             <ul>
+                <li onClick={handleWhoIAmClick}> {whoIAm} </li>
                 <li onClick={handleProjectClick}> {projects} </li>
                 <li onClick={handleContactMeClick}> {contactMe} </li>
-                <li onClick={handleWhoIAmClick}> {whoIAm} </li>
             </ul>
 
             <div className={style.LogosContainer}>
-                <a href={URLs.github} target="blank">
+                <a href={URLs.github} target="_blank" rel="noreferrer">
                     <img src={githubIcon} alt=""/>
                 </a>
-                <a href={URLs.linkedin} target="blank">
+                <a href={URLs.linkedin} target="_blank" rel="noreferrer">
                     <img src={linkedinIcon} alt=""/>
                 </a>
-                <a href={`mailto: ${URLs.gmail}`} target="blank">
+                <a href={`mailto: ${URLs.gmail}`} target="_blank" rel="noreferrer">
                     <img src={gmailIcon} alt=""/>
                 </a>
             </div>
