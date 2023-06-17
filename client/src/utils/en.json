@@ -32,7 +32,7 @@
     },
     "contactMe": {
         "title": "Contact me",
-        "subtitle": "Got a problem to solve?",
+        "subtitle": "Got a project to develop?",
         "description": "Get your space suit ready and tell me your ideas to develop your dream application.",
         "form": {
             "name": "Name",
