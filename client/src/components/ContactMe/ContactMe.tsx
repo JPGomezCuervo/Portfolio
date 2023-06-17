@@ -1,10 +1,8 @@
-import { FC } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import style from "./ContactMe.module.css";
 import { useSelector } from "react-redux";
 import { selectLanguageJson } from "../../features/optionsSlice";
 import emailjs from "@emailjs/browser"
-import { useState } from "react";
-import { useRef } from "react";
 import validation from "./validation";
 
 
@@ -59,17 +57,17 @@ const ContactMe: FC = () => {
         switch (name) {
             case "nameInput":
                 setNameInput(value);
-                validation(name, value, errors, language);
+                setErrors(validation(name, value, errors, language));
                 break;
 
             case "emailInput":
                 setEmailInput(value);
-                validation(name, value, errors, language);
+                setErrors(validation(name, value, errors, language));
                 break;
 
             case "messageInput":
                 setMessageInput(value);
-                validation(name, value, errors, language);
+                setErrors(validation(name, value, errors, language));
                 break;
                 
             default: 
@@ -81,6 +79,10 @@ const ContactMe: FC = () => {
         setEmailInput("");
         setMessageInput("");
     };
+
+    useEffect(() => {
+        setIsAble(Object.values(errors).every(x => x === '') && nameInput !== '' && emailInput !== '' && messageInput !== '');
+    }, [errors, nameInput, emailInput, messageInput]);
 
     return (
         <div className={style.MainContainer}>
@@ -107,18 +109,21 @@ const ContactMe: FC = () => {
                         <label htmlFor="nameInput">{form.name}</label>
                         <input type="text" name="nameInput" placeholder={form.namePlaceHolder} value={nameInput} onChange={handleOnChange}/>
                     </div>
+                    {errors.name && <p className={style.Error}>{errors.name}</p>}
 
                     <div className={style.InputContainer}>
                         <label htmlFor="nameInput">{form.email}</label>
                         <input type="text" name="emailInput" placeholder={form.emailPlaceHolder} value={emailInput} onChange={handleOnChange}/>
                     </div>
+                    {errors.email && <p className={style.Error}>{errors.email}</p>}
 
                     <div className={style.InputContainer}>
                         <label htmlFor= "messageInput">{form.message}</label>
                         <textarea name= "messageInput" placeholder={form.messagePlaceHolder} value={messageInput} onChange={handleOnChange}></textarea>
                     </div>
+                    {errors.message && <p className={style.Error}>{errors.message}</p>}
 
-                    <button onClick={sendEmail}>{form.button}</button>
+                    <button onClick={sendEmail} disabled={!isAble}>{form.button}</button>
 
 
                 </form>

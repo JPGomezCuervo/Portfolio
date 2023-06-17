@@ -70,7 +70,42 @@
     border: 0;
     background-color: #f3f3f3;
 }
+.FormContainer p {
+    font-family: "Montserrat-Regular";
+    font-size: .95rem;
+    color: #6F4AE7;
+    margin-top: 0;
+}
+.FormContainer button {
+    width: 10rem;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: .3rem;
+    padding: .2rem;
+    border: 2px solid #6F4AE7;
+    color: #6F4AE7;
+    font-family: "Montserrat-Bold";
+    font-size: 1rem;
+    font-weight: 100;
+    transition: .2s;
+    cursor: pointer;
+}
 
+.FormContainer button:hover {
+    background-color: #6F4AE7;
+    color: white;
+}
+.FormContainer button:active {
+    background-color:white;
+    color:#6F4AE7;
+}
+
+.FormContainer button[disabled] {
+    background-color: white;
+    border: 2px solid #979595;
+    color: #878787;
+    cursor: not-allowed;
+}
 .InputContainer  {
     display: flex;
     flex-direction: column;
@@ -96,29 +131,6 @@
     background-color: #f3f3f3;
 }
 
-.FormContainer button {
-    width: 10rem;
-    margin: 0 auto;
-    background-color: white;
-    border-radius: .3rem;
-    padding: .2rem;
-    border: 2px solid #6F4AE7;
-    color: #6F4AE7;
-    font-family: "Montserrat-Bold";
-    font-size: 1rem;
-    font-weight: 100;
-    transition: .2s;
-    cursor: pointer;
-}
-
-.FormContainer button:hover {
-    background-color: #6F4AE7;
-    color: white;
-}
-.FormContainer button:active {
-    background-color:white;
-    color:#6F4AE7;
-}
 
 .ModalContainer {
     position: relative;
@@ -141,6 +153,7 @@
     text-align: center;
     color:  #6F4AE7; 
 }
+
 .ModalContainer img {
     height: 4rem;
     width: 4rem;
