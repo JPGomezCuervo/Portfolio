@@ -1,0 +1,53 @@
+.Container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 80%
+}
+
+.ToolBar {
+    width: 80%;
+    height: 3rem;
+    background: #252525;
+    border-radius: .3rem .3rem 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.RedDot {
+    width: .9rem;
+    height: .9rem;
+    background-color: #e06a68;
+    border-radius: 2rem;
+    margin-right: .4rem;
+    margin-left: 1rem;
+
+
+}
+
+.YellowDot {
+    width: .9rem;
+    height: .9rem;
+    background-color: #ecc368;
+    border-radius: 2rem;
+    margin-right: .4rem;
+
+}
+
+.GreenDot {
+    width: .9rem;
+    height: .9rem;
+    background-color: #6bb85d;
+    border-radius: 2rem;
+    margin-right: .4rem;
+}
+
+.SearchBar {
+    width: 50%;
+    height: 1.5rem;
+    background-color: #353535;
+    border-radius: .3rem;
+    margin: 0 auto;
+    margin-left: 18%;
+
+}
