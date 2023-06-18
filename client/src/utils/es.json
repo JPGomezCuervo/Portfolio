@@ -73,6 +73,33 @@
               "maxLength": "¡El mensaje debe tener menos de 100 caracteres!"
             }
           }
+    },
+
+    "details": {
+        "portfolio": {
+            "name": "name",
+            "description": "description",
+            "tecnologies":{
+                "frontEnd":[],
+                "backEnd": []
+            }
+        },
+        "muscleLab": {
+            "name": "name",
+            "description": "description",
+            "tecnologies":{
+                "frontEnd":[],
+                "backEnd": []
+            }
+        },
+        "doggoFinder": {
+            "name": "name",
+            "description": "description",
+            "tecnologies":{
+                "frontEnd":[],
+                "backEnd": []
+            }
+        }
     }
 
 }

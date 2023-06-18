@@ -32,7 +32,7 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
             behavior: "smooth"
         })
         setTimeout(() =>{
-            window.location.reload();
+            window.location.href = "/";
 
         }, 200)
     }

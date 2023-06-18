@@ -1,12 +1,13 @@
-import React from "react";
 import "./App.css";
+import React, { useState, useEffect, useRef } from "react";
+import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Summary from "./components/Summary/Summary";
 import ContactMe from "./components/ContactMe/ContactMe";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/Carousel/Carousel";
-import { useState, useEffect, useRef } from "react";
+import Details from "./components/Details/Details";
 
 function App() {
 
@@ -86,21 +87,35 @@ function App() {
   return (
     <div className= "App">
       <NavBar handleProjectClick={handleProjectClick} handleContactMeClick={handleContactMeClick} handleWhoIAmClick={handleWhoIAmClick}/>
-      <section>
-        <Summary/>
-      </section>
 
-      <section ref={whoIAmRef}>
-        <Carousel/>
-      </section>
+      <Routes>
 
-      <section ref={projectsRef}>
-        <Projects/>
-      </section>
+        <Route path="/" element ={
+          <>
+            <section>
+              <Summary/>
+            </section>
+          
 
-      <section ref={contactMeRef}>
-        <ContactMe/>
-      </section>
+          
+            <section ref={whoIAmRef}>
+              <Carousel/>
+            </section>
+
+          
+            <section ref={projectsRef}>
+              <Projects/>
+            </section>
+          
+            <section ref={contactMeRef}>
+              <ContactMe/>
+            </section>
+          </>
+        }/>
+        
+
+        <Route path="/detail/:name" element={<Details/>}/>
+      </Routes>
 
       <Footer handleProjectClick={handleProjectClick} handleContactMeClick={handleContactMeClick} handleWhoIAmClick={handleWhoIAmClick}/>
       

@@ -9,6 +9,16 @@ interface optionState {
     darkMode: boolean;
 } 
 
+interface DetailsType <T> {  
+    name: T;
+    description: T;
+    tecnologies: {
+      frontEnd: T[];
+      backEnd: T[];
+    }
+}
+
+
 export interface LanguageType <T> {
     navBar: {
       projects: T;
@@ -83,7 +93,13 @@ export interface LanguageType <T> {
           maxLength: T;
         }
       }
+    },
+    details: {
+      portfolio: DetailsType <T>;
+      muscleLab: DetailsType <T>;
+      doggoFinder: DetailsType <T>;
     }
+
 }
 
   

@@ -1,10 +1,11 @@
-import React, { FC } from "react";
-import style from "./Projects.module.css";
-import { useSelector } from "react-redux";
-import { selectLanguageJson } from "../../features/optionsSlice";
 import manIcon from "../../assets/icons/projects/man-silhouette.png";
 import dumbBell from "../../assets/icons/projects/dumbbell.png";
 import pawIcon from "../../assets/icons/projects/paw_logo_icon.png";
+import style from "./Projects.module.css";
+import React, { FC } from "react";
+import { useSelector } from "react-redux";
+import { selectLanguageJson } from "../../features/optionsSlice";
+import { Link } from "react-router-dom";
 
 
 const Projects: FC = () => {
@@ -17,33 +18,40 @@ const Projects: FC = () => {
             <h2>{title}</h2>
             <div className={style.BarsContainer}>
 
-                <div className={style.Portfolio}>
-                    <h2> https:// Juan Gómez </h2>
-                </div>
 
-                <div className={style.MuscleLab}>
+                <Link to={"/detail/portfolio"}>
+                    <div className={style.Portfolio}>
+                        <h2> https:// Juan Gómez </h2>
+                    </div>
+                </Link>
 
-                    <img
-                        className={style.IconMan}
-                        src={manIcon}
-                        alt=""
-                    />
+                <Link to={"/detail/musclelab"}>
+                    <div className={style.MuscleLab}>
 
-                    <h2>Muscle Lab</h2>
+                        <img
+                            className={style.IconMan}
+                            src={manIcon}
+                            alt=""
+                        />
 
-                    <img
-                        className={style.IconWeight}
-                        src={dumbBell}
-                        alt="Icono de pesa"
-                    />
+                        <h2>Muscle Lab</h2>
 
-                </div>
+                        <img
+                            className={style.IconWeight}
+                            src={dumbBell}
+                            alt="Icono de pesa"
+                        />
 
-                <div className={style.DoggoFinder}>
-                    <img src= {pawIcon} alt=""/>
-                    <h2>oggo</h2>
+                    </div>
+                </Link>
 
-                </div>
+                <Link to={"detail/doggofinder"}>
+                    <div className={style.DoggoFinder}>
+                        <img src= {pawIcon} alt=""/>
+                        <h2>oggo</h2>
+
+                    </div>
+                </Link>
 
             </div>
         </div>
