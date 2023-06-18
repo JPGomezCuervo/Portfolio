@@ -10,6 +10,7 @@ interface optionState {
 } 
 
 interface DetailsType <T> {  
+    date: T;
     name: T;
     description: T;
     tecnologies: {
@@ -95,9 +96,10 @@ export interface LanguageType <T> {
       }
     },
     details: {
+      goBack: string;
       portfolio: DetailsType <T>;
-      muscleLab: DetailsType <T>;
-      doggoFinder: DetailsType <T>;
+      musclelab: DetailsType <T>;
+      doggofinder: DetailsType <T>;
     }
 
 }

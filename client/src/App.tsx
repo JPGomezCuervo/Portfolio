@@ -114,7 +114,7 @@ function App() {
         }/>
         
 
-        <Route path="/detail/:name" element={<Details/>}/>
+        <Route path="/detail/:nameParam" element={<Details/>}/>
       </Routes>
 
       <Footer handleProjectClick={handleProjectClick} handleContactMeClick={handleContactMeClick} handleWhoIAmClick={handleWhoIAmClick}/>

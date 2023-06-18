@@ -76,23 +76,27 @@
     },
 
     "details": {
+        "goBack": "Atras",
         "portfolio": {
-            "name": "name",
+            "date": "Mayo 2023",
+            "name": "Portfolio",
             "description": "description",
             "tecnologies":{
                 "frontEnd":[],
                 "backEnd": []
             }
         },
-        "muscleLab": {
-            "name": "name",
+        "musclelab": {
+            "date": "May 2023",
+            "name": "Muscle Lab",
             "description": "description",
             "tecnologies":{
                 "frontEnd":[],
                 "backEnd": []
             }
         },
-        "doggoFinder": {
+        "doggofinder": {
+            "date": "May 2023",
             "name": "name",
             "description": "description",
             "tecnologies":{

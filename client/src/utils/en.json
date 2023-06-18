@@ -76,23 +76,27 @@
     },
 
     "details": {
+        "goBack": "Go back",
         "portfolio": {
-            "name": "name",
+            "date": "May 2023",
+            "name": "Portfolio",
             "description": "description",
             "tecnologies":{
                 "frontEnd":[],
                 "backEnd": []
             }
         },
-        "muscleLab": {
-            "name": "name",
-            "description": "description",
+        "musclelab": {
+            "date": "May 2023",
+            "name": "Muscle Lab",
+            "description": "Muscle Lab is a web page designed to manage a fictional gym. It features embedded payment methods, appointment scheduling, user-friendly interfaces, and an admin dashboard that allows administrators to set and modify various aspects of the gym, including lessons, locations, memberships, trainers, and more.",
             "tecnologies":{
                 "frontEnd":[],
                 "backEnd": []
             }
         },
-        "doggoFinder": {
+        "doggofinder": {
+            "date": "May 2023",
             "name": "name",
             "description": "description",
             "tecnologies":{
