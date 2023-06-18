@@ -58,6 +58,14 @@ function App() {
     }
   }, [contactMeClick, contactMeRef]);
 
+  useEffect(()=> {
+    window.scroll({
+      left: 0,
+      top: 0,
+      behavior:"auto"
+    })
+  }, [])
+
   useEffect(() => {
     if (whoIAmClick && projectsRef.current) {
       const elementRect = projectsRef.current.getBoundingClientRect();
