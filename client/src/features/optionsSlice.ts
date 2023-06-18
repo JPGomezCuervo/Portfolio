@@ -14,6 +14,7 @@ interface DetailsType <T> {
     name: T;
     description: T;
     tecnologies: {
+      title: T;
       frontEnd: T[];
       backEnd: T[];
     }
@@ -97,6 +98,8 @@ export interface LanguageType <T> {
     },
     details: {
       goBack: string;
+      viewProject: string;
+      viewSourceCode: string;
       portfolio: DetailsType <T>;
       musclelab: DetailsType <T>;
       doggofinder: DetailsType <T>;

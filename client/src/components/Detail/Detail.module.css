@@ -5,12 +5,26 @@
 
 .Navegation {
     display: flex;
+    margin-left: 0rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+.Navegation p {
+    font-size: 1.6rem;
+    margin: auto 0;
+    margin-bottom: .5rem;
+}
+
+.Navegation img {
+    transform: rotate(-180deg);
+    height: 3rem;
+    margin-right: 1.5rem;
 }
 
 .LeftContainer {
-    width: 60%;
+    width: 55%;
     margin-left: 5%;
-
 }
 
 .LeftContainer h2 {
@@ -22,32 +36,146 @@
     margin-top: .5rem;
 
 }
+
 .LeftContainer p {
     font-family: "Montserrat-Regular";
     font-size: 1.2rem;
     text-align: left;
     font-weight: 200;
-    width: 85%;
+    width: 88%;
+    margin-top: .4rem;
+    line-height: 1.4;
+}
+
+.Description {
+    margin-bottom: 3rem;
+}
+
+.ButtonsContainer {
+    display: flex;
+}
+
+.PrimaryButton {
+    display: flex;
+    background-color: #6F4AE7;
+    width: fit-content;
+    margin-right: 5rem;
+    align-items: center;
+    padding-right: .4rem;
+    padding-left: .4rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+}
+
+.PrimaryButton img {
+    height: 1.2rem;
+    margin-right: .5rem;
+}
+.PrimaryButton button {
+    background-color: transparent;
+    border: 0;
+    margin: auto auto;
+    font-family: "Montserrat-Medium";
+    color: white;
+    font-size: 1rem;
+}
+
+.SecondaryButton {
+    display: flex;
+    border: 2px solid #6F4AE7;
+    border-radius: .3rem;
+    padding-left: .3rem;
+    padding-right: .3rem;
+    align-items: center;
+}
+
+.SecondaryButton img {
+    height: 1.4rem;
+    margin: auto 0;
+    margin-right: 1rem;
+    margin-left: .4rem;
+}
+
+.SecondaryButton button {
+    background-color: transparent;
+    border: 0;
+    margin: auto auto;
+    color: #6F4AE7;
+    font-family: "Montserrat-Bold";
+    font-size: 1rem;
+    font-weight: 100;
+    margin: auto 0;
+    margin-right: .4rem;
+}
+
+.TecnologiesContainer {
+    margin-top: 2rem;
+}
+
+.TecnologiesContainer h3 {
+    text-align: left;
+    font-family: "Montserrat-SemiBold";
+    font-size: 2rem;
+}
+
+.FrontEndTags {
+    display: flex;
+}
+
+.FrontEndTags div {
+    background-color: #6F4AE7;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+
+}
+
+.FrontEndTags span {
+    font-family: "Montserrat-Medium";
+    color: white;
+}
+
+.BackEndTags div {
+    background-color: #FD6439;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: .3rem;
+
+}
+
+.BackEndTags {
+    display: flex;
+}
+
+.BackEndTags span {
+    font-family: "Montserrat-Medium";
+    color: white;
 }
 
 .RightContainer {
-    width: 40%;
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    align-items: center;
 }
 
+
+.RightContainer img {
+    height: 25rem;
+    padding-bottom: 3rem;
+
+}
 .BackgroundDate {
     width: fit-content;
     padding-left: .5rem;
     padding-right: .5rem;
     background-color: #fd6439;
+    margin-bottom: 3rem;
 }
 .BackgroundDate p {
     color: white;
     width: fit-content;
     font-size: 1.4rem;
-}
-
-.RightContainer img {
-    height: 24rem;
-
 }
 

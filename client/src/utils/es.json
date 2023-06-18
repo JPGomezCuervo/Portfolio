@@ -77,11 +77,14 @@
 
     "details": {
         "goBack": "Atras",
+        "viewProject": "Mira el proyecto",
+        "viewSourceCode": "Mira el código fuente",
         "portfolio": {
             "date": "Mayo 2023",
             "name": "Portfolio",
             "description": "description",
             "tecnologies":{
+                "title": "Teconologías y librerías",
                 "frontEnd":[],
                 "backEnd": []
             }
@@ -91,6 +94,7 @@
             "name": "Muscle Lab",
             "description": "description",
             "tecnologies":{
+                "title": "Teconologías y librerías",
                 "frontEnd":[],
                 "backEnd": []
             }
@@ -100,6 +104,7 @@
             "name": "name",
             "description": "description",
             "tecnologies":{
+                "title": "Teconologías y librerías",
                 "frontEnd":[],
                 "backEnd": []
             }
