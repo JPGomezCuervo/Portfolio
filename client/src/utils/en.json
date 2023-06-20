@@ -82,7 +82,7 @@
         "portfolio": {
             "date": "May 2023",
             "name": "Portfolio",
-            "description": "description",
+            "description": "Portfolio is a web page designed to showcase and manage my personal work profile. It is my first complete project developed using TypeScript. Its goal is to be an impeccable and visually appealing application that provides a pleasant navigation experience.",
             "tecnologies":{
                 "title": "Tecnologies & libraries",
                 "frontEnd":[],
@@ -102,11 +102,11 @@
         "doggofinder": {
             "date": "May 2023",
             "name": "name",
-            "description": "description",
+            "description": "DoggoFinder is a web page designed to explore, find, and learn about more than 300 dog breeds. It features filters, sorting methods, forms, and easy interactions between the user and the database. The main goal of this application is to efficiently manage large amounts of data from various sources, with the primary ones being a PostgreSQL database and a REST API.",
             "tecnologies":{
                 "title": "Tecnologies & libraries",
                 "frontEnd":[],
-                "backEnd": []
+                "backEnd": ["Express","PostgreSQL", "Sequelize"]
             }
         }
     }

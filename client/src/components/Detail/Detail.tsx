@@ -1,11 +1,12 @@
 import style from "./Detail.module.css";
 import { FC, useEffect } from "react";
-import { useSelector } from "react-redux";
-import { selectLanguageJson } from "../../features/optionsSlice";
 import image from "../../assets/images/details/crayon-2069.png";
 import arrow from "../../assets/icons/icons8-arrow.svg";
 import eye from "../../assets/icons/icons8-eye-96.png";
 import github from "../../assets/icons/github.svg";
+import { useSelector } from "react-redux";
+import { selectLanguageJson } from "../../features/optionsSlice";
+import { useNavigate } from "react-router-dom";
 
 type NameType = "musclelab" | "portfolio" | "doggofinder";
 
@@ -15,6 +16,8 @@ interface DetailProps {
 
 
 const Detail: FC<DetailProps> =({nameParam}) => {
+
+    const navigate = useNavigate();
     
     const language = useSelector(selectLanguageJson);
     
@@ -34,7 +37,7 @@ const Detail: FC<DetailProps> =({nameParam}) => {
     return(
         <div className={style.Container}>
             <div className={style.LeftContainer}>
-                <div className={style.Navegation}>
+                <div className={style.Navegation} onClick={()=> navigate(-1)}>
                     <img src={arrow} alt=""/>
                     <p>{goBack}</p>
                 </div>
