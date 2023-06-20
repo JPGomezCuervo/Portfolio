@@ -1,9 +1,10 @@
 import style from "./Detail.module.css";
-import { FC, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 import image from "../../assets/images/details/crayon-2069.png";
 import arrow from "../../assets/icons/icons8-arrow.svg";
 import eye from "../../assets/icons/icons8-eye-96.png";
 import github from "../../assets/icons/github.svg";
+import whiteGithub from "../../assets/icons/white-github.svg";
 import { useSelector } from "react-redux";
 import { selectLanguageJson } from "../../features/optionsSlice";
 import { useNavigate } from "react-router-dom";
@@ -22,8 +23,10 @@ const Detail: FC<DetailProps> =({nameParam}) => {
     const language = useSelector(selectLanguageJson);
     
     const { goBack, viewProject, viewSourceCode } = language.details;
-    const { date, name, description, tecnologies } = language.details[nameParam];
-    const { frontEnd, backEnd, title } = tecnologies 
+    const { date, name, description, tecnologies, sourceCode, deploy } = language.details[nameParam];
+    const { frontEnd, backEnd, title } = tecnologies;
+    
+    const [ isHovered, setIsHovered ] = useState(false);
 
     useEffect(() => {
         window.scroll({
@@ -50,13 +53,25 @@ const Detail: FC<DetailProps> =({nameParam}) => {
                 <div className={style.ButtonsContainer}>
                     <div className={style.PrimaryButton}>
                         <img src={eye} alt=""/>
-                        <button>{viewProject}</button>
+                        <button onClick={() => {
+                            window.open(deploy, "_blank");
+                        }}
+                        >{viewProject}</button>
                     </div>
 
-                    <div className={style.SecondaryButton}>
-                        <img src={github} alt=""/>
-                        <button>{viewSourceCode}</button>
-                    </div>
+                    <button  className={style.SecondaryButton}
+                     onClick={()=> {
+                        window.open(sourceCode, "_blank");  
+                    }}
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={()=> setIsHovered(false)}
+                    >
+                        {!isHovered ?
+                         <img src={github} alt=""/>
+                         : (<img src={whiteGithub} alt=""/>)
+                        }
+                        {viewSourceCode}
+                    </button>
                 </div>
                 <div className={style.TecnologiesContainer}>
                     <h3>{title}</h3>

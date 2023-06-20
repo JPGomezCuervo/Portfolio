@@ -3,6 +3,10 @@
     padding-top: 8rem;
 }
 
+.Container button {
+    cursor: pointer;
+}
+
 .Navegation {
     display: flex;
     margin-left: 0rem;
@@ -65,7 +69,17 @@
     padding-left: .4rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    cursor: pointer;
 
+}
+
+
+.PrimaryButton:hover {
+    background-color: #5e35e4;
+}
+
+.PrimaryButton:active {
+    background-color: #6F4AE7;
 }
 
 .PrimaryButton img {
@@ -81,13 +95,30 @@
     font-size: 1rem;
 }
 
+
+
 .SecondaryButton {
+    background-color: transparent;
     display: flex;
     border: 2px solid #6F4AE7;
     border-radius: .3rem;
-    padding-left: .3rem;
-    padding-right: .3rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     align-items: center;
+    cursor: pointer;
+    font-family: "Montserrat-Bold";
+    font-size: 1rem;
+    font-weight: 100;
+    color: #6F4AE7;
+}
+
+.SecondaryButton:hover {
+    background-color: #6F4AE7;
+    color: white;
+}
+.SecondaryButton:active {
+    background-color:white;
+    color:#6F4AE7;
 }
 
 .SecondaryButton img {
@@ -95,18 +126,6 @@
     margin: auto 0;
     margin-right: 1rem;
     margin-left: .4rem;
-}
-
-.SecondaryButton button {
-    background-color: transparent;
-    border: 0;
-    margin: auto auto;
-    color: #6F4AE7;
-    font-family: "Montserrat-Bold";
-    font-size: 1rem;
-    font-weight: 100;
-    margin: auto 0;
-    margin-right: .4rem;
 }
 
 .TecnologiesContainer {

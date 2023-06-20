@@ -17,7 +17,9 @@ interface DetailsType <T> {
       title: T;
       frontEnd: T[];
       backEnd: T[];
-    }
+    },
+    deploy: T;
+    sourceCode: T;
 }
 
 

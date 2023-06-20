@@ -1,5 +1,6 @@
 import { FC } from "react";
 import style from "./Preview.module.css";
+import arrow from "../../assets/icons/icons8-arrow.svg";
 import musclelab_a from "../../assets/images/details/musclelab/musclelab1.png";
 import musclelab_b from "../../assets/images/details/musclelab/musclelab2.png";
 import musclelab_c from "../../assets/images/details/musclelab/musclelab3.png";
@@ -10,12 +11,19 @@ import portfolio_d from "../../assets/images/details/portfolio/portfolio4.png";
 import doggofinder_a from "../../assets/images/details/doggofinder/dogapi1.png";
 import doggofinder_b from "../../assets/images/details/doggofinder/dogapi2.png";
 import doggofinder_c from "../../assets/images/details/doggofinder/dogapi3.png";
+import { useSelector } from "react-redux";
+import { selectLanguageJson } from "../../features/optionsSlice";
+import { useNavigate } from "react-router-dom";
 
 interface PreviewType {
     nameParam: string;
 }
 
 const Preview: FC<PreviewType> = ({ nameParam }) => {
+
+    const language = useSelector(selectLanguageJson);
+    const navigate = useNavigate();
+    const { goBack } = language.details;
 
     const imageSelector = (nameParam: string): any => {
         switch (nameParam) {
@@ -50,6 +58,11 @@ const Preview: FC<PreviewType> = ({ nameParam }) => {
                     )
                 })
             }
+
+            <div className={style.Navegation} onClick={()=> navigate(-1)}>
+                <img src={arrow} alt=""/>
+                <p>{goBack}</p>
+            </div>
         </div>
     );
 };
