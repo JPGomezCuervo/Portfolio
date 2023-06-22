@@ -97,8 +97,8 @@
             "description": "Muscle Lab is a web page designed to manage a fictional gym. It features embedded payment methods, appointment scheduling, user-friendly interfaces, and an admin dashboard that allows administrators to set and modify various aspects of the gym, including lessons, locations, memberships, trainers, and more.",
             "tecnologies":{
                 "title": "Tecnologies & libraries",
-                "frontEnd":["React", "Redux", "Auth0", "Stripe", "Email.js"],
-                "backEnd": ["Express","PostgreSQL", "Sequelize", "JWT"]
+                "frontEnd":["React", "Redux", "Auth0", "Email.js", "CSS"],
+                "backEnd": ["Express","PostgreSQL", "Stripe", "Sequelize", "JWT"]
             },
             "deploy":"https://muscle-lab-six.vercel.app/",
             "sourceCode": "https://github.com/GastonComparin/MuscleLab"

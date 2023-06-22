@@ -8,7 +8,6 @@ type NameType = "musclelab" | "portfolio" | "doggofinder";
 const Details = () => {
 
     const params = useParams<{ nameParam?: NameType }>().nameParam || "musclelab";
-    console.log(params)
     
     return(
         <div className={style.Container}>

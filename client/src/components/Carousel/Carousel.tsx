@@ -34,7 +34,7 @@ const Carousel: FC = () => {
               isScrolling = true;
         
               setTimeout(() => {
-                if (event.deltaX > 20) {
+                if (event.deltaX > 0) {
                   updateIndex(activeIndex + 1);
                 } else {
                   updateIndex(activeIndex - 1);

@@ -6,6 +6,8 @@ import gmailIcon from "../../assets/icons/gmail.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import  URLJson from "../../utils/links.json";
+import { useDispatch } from "react-redux";
+import { setLanguage } from "../../features/optionsSlice";
 
 interface NavBarPropsType {
     handleProjectClick: ()=> void;
@@ -23,6 +25,8 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
     const language = useSelector(selectLanguageJson);
     const URLs: URLType = URLJson;
     const {projects, contactMe, whoIAm} = language.navBar;
+
+    const dispatch = useDispatch();
 
     const handleLogoClick = () => {
 

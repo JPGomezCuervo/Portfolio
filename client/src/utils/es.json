@@ -89,7 +89,7 @@
                 "backEnd": []
             },
             "deploy":"https://muscle-lab-six.vercel.app/",
-            "sourceCode": "https://github.com/GastonComparin/MuscleLab"
+            "sourceCode": "https://github.com/JPGomezCuervo/Portfolio"
         },
         "musclelab": {
             "date": "Mayo 2023",
@@ -97,8 +97,8 @@
             "description": "Muscle Lab es una página web diseñada para gestionar un gimnasio ficticio. Cuenta con métodos de pago integrados, programación de citas, interfaces fáciles de usar y un panel de administración que permite a los administradores configurar y modificar diversos aspectos del gimnasio, como clases, ubicaciones, afiliaciones, entrenadores y mucho más.",
             "tecnologies":{
                 "title": "Teconologías y librerías",
-                "frontEnd":["React", "Redux", "Auth0", "Stripe", "Email.js", "CSS"],
-                "backEnd": ["Express","PostgreSQL", "Sequelize", "JWT"]
+                "frontEnd":["React", "Redux", "Auth0", "Email.js", "CSS"],
+                "backEnd": ["Express","PostgreSQL", "Stripe", "Sequelize", "JWT"]
             },
             "deploy":"https://muscle-lab-six.vercel.app/",
             "sourceCode": "https://github.com/GastonComparin/MuscleLab"
@@ -113,7 +113,7 @@
                 "backEnd": ["Express","PostgreSQL", "Sequelize"]
             },
             "deploy":"https://muscle-lab-six.vercel.app/",
-            "sourceCode": "https://github.com/GastonComparin/MuscleLab"
+            "sourceCode": "https://github.com/JPGomezCuervo/API-DOG"
         }
     }
 
