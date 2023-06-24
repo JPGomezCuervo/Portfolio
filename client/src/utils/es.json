@@ -11,14 +11,14 @@
     "whoIAm": {
         "firstView": {
             "title": "Quién soy",
-            "description": "Soy un desarrollador web full stack interesado en la eficiencia del código y la creación de experiencias UI/UX elegantes."
+            "description": "Desarrollador web full stack interesado en la eficiencia del código y la creación de experiencias UI/UX elegantes."
         },
         "secondView": {
             "title": "Teconologías"
         },
         "thirdView": {
             "title": "Experiencia",
-            "description": "Soy graduado del bootcamp de Henry ( +800 horas) y estoy ansioso por aplicar todos mis conocimientos en una empresa de tecnología. Mi formación como historiador me permite leer infinidad de artículos y libros sobre cualquier tema sin dificultad, una habilidad que utilizo a diario para aprender, actualizar y perfeccionar mis habilidades como desarrollador."
+            "description": "Graduado del bootcamp de Henry ( +800 horas) y ansioso por aplicar todos mis conocimientos en una empresa de tecnología. Mi formación como historiador me permite leer infinidad de artículos y libros sobre cualquier tema sin dificultad, una habilidad que utilizo a diario para aprender, actualizar y perfeccionar mis habilidades como desarrollador."
         }
     },
     "projects": {
