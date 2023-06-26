@@ -24,7 +24,6 @@
     margin-right: 10rem;
     margin-bottom: 0;
     margin-top: .5rem;
-    
 }
 
 .LeftContainer img {
@@ -37,11 +36,12 @@
 }
 .RightContainer h3 {
     font-family: "Montserrat-Regular";
-    padding-top: 9rem;
+    padding-top: 8rem;
     padding-left: 2rem;
     font-size: 1.6rem;
     text-align: left;
     font-weight: 200;
     width: 85%;
+    line-height: 2.5rem;
     
 }
