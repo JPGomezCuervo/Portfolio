@@ -101,7 +101,7 @@
                 "backEnd": ["Express","PostgreSQL", "Stripe", "Sequelize", "JWT"]
             },
             "deploy":"https://muscle-lab-six.vercel.app/",
-            "sourceCode": "https://github.com/GastonComparin/MuscleLab"
+            "sourceCode": "https://github.com/JPGomezCuervo/MuscleLab"
         },
         "doggofinder": {
             "date": "April 2023",
