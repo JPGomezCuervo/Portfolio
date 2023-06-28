@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.Header ul {
+.NavBarOptions {
     font-family: "Montserrat-Bold";
     list-style: none;
     display: flex;
@@ -16,7 +16,7 @@
     gap: 10%;
 }
 
-.Header li {
+.NavBarOptions li {
     min-width: 7rem;
     cursor: pointer;
 }
@@ -81,17 +81,57 @@
     color:#6F4AE7;
 }
 
+.Label {
+    display: none;
+    cursor: pointer;
+}
+
+.Checkbox {
+    display: none;
+}
+
+.DropMenuMobile {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0%);
+    background-color: white;
+    display: none;
+    z-index: 99999;
+    width: 40vw;
+    border-radius: .6rem;
+    box-shadow: 0 .4rem 0.4rem rgba(99, 99, 99, 0.7);
+    margin-top: .5vh;
+}
+.DropMenuMobile li {
+    list-style: none;
+    font-family: "Montserrat-Bold";
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.DropMenuMobile li:hover {
+    text-shadow: 0 0 .8px rgb(28, 27, 27);
+}
+
+.DropMenuMobile ul {
+    padding: 0;
+}
+
 @media screen and (max-width: 1140px) {
     .Logo {
         transform: scale(.8);
     }
-    .Header ul {
+    .NavBarOptions {
         gap: 5%;
     }
 }
 
 @media screen and (max-width: 1100px) {
-    .Header ul {
+    .NavBarOptions {
         transform: scale(.85);
         padding: 0;
     }
@@ -109,5 +149,32 @@
     .LogosContainer img {
         margin-left: 2%;
     }
+}
+
+@media screen and (max-width: 850px) {
+    .Label {
+        display: initial;
+        width: fit-content;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    .Label img {
+        height: 2rem;
+    }
+
+    .LogosContainer {
+        display: none;
+    }
+
+    .NavBarOptions {
+        display: none;
+    }
+
+    .Checkbox:checked ~ .DropMenuMobile {
+        display: initial;
+        
+    }
+
 }
 

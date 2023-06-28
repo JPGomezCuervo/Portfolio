@@ -1,12 +1,12 @@
-import { FC } from "react";
-import { useSelector } from "react-redux";
-import { selectLanguageJson, selectLanguage } from "../../features/optionsSlice";
 import style from "./NavBar.module.css";
 import gmailIcon from "../../assets/icons/gmail.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import  URLJson from "../../utils/links.json";
-import { useDispatch } from "react-redux";
+import menuIcon from "../../assets/icons/icons8-menu.svg";
+import { FC, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { selectLanguageJson, selectLanguage } from "../../features/optionsSlice";
 import { setLanguage } from "../../features/optionsSlice";
 
 interface NavBarPropsType {
@@ -26,6 +26,8 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
     const URLs: URLType = URLJson;
     const {projects, contactMe, whoIAm} = language.navBar;
     const languageName = useSelector(selectLanguage);
+
+    const inputRef = useRef<HTMLInputElement>(null);
 
     const dispatch = useDispatch();
 
@@ -50,7 +52,7 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
                 <h2>https:// Juan Gómez</h2>
             </div>
 
-            <ul>
+            <ul className={style.NavBarOptions}>
                 <li onClick={handleWhoIAmClick}> {whoIAm} </li>
                 <li onClick={handleProjectClick}> {projects} </li>
                 <li onClick={handleContactMeClick}> {contactMe} </li>
@@ -66,6 +68,21 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
                 <a href={`mailto: ${URLs.gmail}`} target="_blank" rel="noreferrer">
                     <img src={gmailIcon} alt=""/>
                 </a>
+            </div>
+
+            <label htmlFor="checkbox" className={style.Label}>
+                <img src={menuIcon} alt="" />
+            </label>
+
+            <input ref={inputRef} type="checkbox" className={style.Checkbox} name="checkbox" id= "checkbox">
+            </input>
+
+            <div className={style.DropMenuMobile}>
+                <ul>
+                    <li onClick={handleWhoIAmClick}> {whoIAm} </li>
+                    <li onClick={handleProjectClick}> {projects} </li>
+                    <li onClick={handleContactMeClick}> {contactMe} </li>
+                </ul>
             </div>
         </header>
     )
