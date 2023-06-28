@@ -9,7 +9,7 @@
 .MainContainer h2 {
     color: black;
     font-family: "Montserrat-ExtraBold";
-    font-size:3rem;
+    font-size:3.5rem;
     font-weight: 200;
     margin-right: 10rem;
     padding-left: 6rem;
@@ -21,9 +21,6 @@
     color: white;
 }
 
-.BarsContainer {
-    /* display: flex; */
-}
 
 .Portfolio {
     display: flex;

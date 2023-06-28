@@ -49,35 +49,26 @@
 }
 
 @media screen and (min-width:1920px) {
+    .MainContainer {
+        height: 50vh;
+    }
     .LeftContainer img {
-        height: 30rem;
+        height: 25rem;
+        position: relative;
+        bottom: 3%;
     }
-}
-
-@media screen and (max-width: 1270px) {
+    .LeftContainer h2 {
+        font-size: 3.5rem;
+    }
+    
+    .RightContainer {
+        display: flex;
+        align-items: center;
+    }
     .RightContainer h3 {
-        font-size: 1.7rem;
+        padding: 0;
+        font-size: 2.6rem;
+        line-height: 3.5rem;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .LeftContainer img {
-        height: 20rem;
-    }
-
-    .RightContainer h3 {
-        font-size: 1.5rem;
-    }
-}
-
-
-
-@media screen and (max-width: 800px) {
-    .LeftContainer img {
-        height: 17rem;
-    }
-
-    .RightContainer h3 {
-        font-size: 1.3rem;
-    }
-}

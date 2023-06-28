@@ -23,6 +23,7 @@
     margin-right: 10rem;
     margin-top: .5rem;
     margin-bottom: 2rem;
+    text-align: left;
     
 }
 
@@ -40,11 +41,21 @@
     
 }
 @media screen and (min-width:1920px) {
-    .RightContainer {
-        padding-top: 10rem;
+    .MainContainer {
+        height: 50vh;
     }
     .LeftContainer img {
-        height: 30rem;
+        height: 27rem;
+        margin-right: 5%;
+        position: relative;
+        bottom: 2%;
+    }
+    .RightContainer {
+        padding-top: 9.2rem;
+    }
+    .LeftContainer h2 {
+        font-size: 3.5rem;
+        margin-left: 5.3rem;
     }
 }
 

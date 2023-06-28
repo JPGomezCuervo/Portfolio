@@ -46,13 +46,23 @@
     
 }
 @media screen and (min-width:1920px){
-    .RightContainer h3 {
-        font-size: 2rem;
-        padding-top: 10rem;
+    .MainContainer {
+        height: 50vh;
     }
-
     .LeftContainer img {
         height: 35rem;
+        position: relative;
+        bottom: 7%;
+    }
+
+    .RightContainer h3 {
+        font-size: 2rem;
+        line-height: 3rem;
+        width: 80%;
+    }
+    .LeftContainer h2 {
+        font-size: 3.5rem;
+        margin-right: 42%;
     }
 }
 
