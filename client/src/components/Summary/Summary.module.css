@@ -42,3 +42,26 @@
     height: 24rem;
     border-radius: 50rem;
 }
+
+@media screen and (min-width: 1920px) {
+    .LeftContainer {
+        padding-left: 12%;
+        width: 45%;
+    }
+
+    .LeftContainer h1 {
+        font-size: 7rem;
+        width: 60%;
+    }
+    .LeftContainer h3 {
+        font-size: 3rem;
+        width: 70%;
+    }
+    .RightContainer {
+        /* padding-left: 10%; */
+    }
+    .RightContainer img {
+        height: 32rem;
+    }
+    
+}
