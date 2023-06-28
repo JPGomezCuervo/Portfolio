@@ -27,28 +27,32 @@ const Projects: FC = () => {
 
                 <Link to={"/detail/musclelab"}>
                     <div className={style.MuscleLab}>
+                        <div className={style.Icon}>
+                            <img
+                                className={style.IconMan}
+                                src={manIcon}
+                                alt=""
+                            />
 
-                        <img
-                            className={style.IconMan}
-                            src={manIcon}
-                            alt=""
-                        />
+                            <h2>Muscle Lab</h2>
 
-                        <h2>Muscle Lab</h2>
+                            <img
+                                className={style.IconWeight}
+                                src={dumbBell}
+                                alt="Icono de pesa"
+                            />
+                        </div>
 
-                        <img
-                            className={style.IconWeight}
-                            src={dumbBell}
-                            alt="Icono de pesa"
-                        />
 
                     </div>
                 </Link>
 
                 <Link to={"detail/doggofinder"}>
                     <div className={style.DoggoFinder}>
-                        <img src= {pawIcon} alt=""/>
-                        <h2>oggo</h2>
+                        <div className={style.Icon}>
+                            <img src= {pawIcon} alt=""/>
+                            <h2>oggo</h2>
+                        </div>
 
                     </div>
                 </Link>
