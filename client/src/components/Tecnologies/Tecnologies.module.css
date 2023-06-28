@@ -39,3 +39,17 @@
     margin-left: 2rem;
     
 }
+@media screen and (min-width:1920px) {
+    .RightContainer {
+        padding-top: 10rem;
+    }
+    .LeftContainer img {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .LeftContainer img {
+        height: 20rem;
+    }
+}

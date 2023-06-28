@@ -45,3 +45,29 @@
     line-height: 2.5rem;
     
 }
+@media screen and (min-width:1920px){
+    .RightContainer h3 {
+        font-size: 2rem;
+        padding-top: 10rem;
+    }
+
+    .LeftContainer img {
+        height: 35rem;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .RightContainer h3 {
+        font-size: 1.3rem;
+    }
+
+    .LeftContainer img {
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .RightContainer h3 {
+        font-size:  1.1rem;
+    }
+}

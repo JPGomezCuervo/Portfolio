@@ -2,8 +2,8 @@
     background-color: #6F4AE7;
     width: 70%;
     height: fit-content;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .Background p {
@@ -12,4 +12,14 @@
     font-size: 1.5rem;
     margin-top: .2rem;
     margin-bottom: .2rem;
+}
+
+@media screen and (max-width:1150px) {
+    .Background {
+        background-color: #6F4AE7;
+        width: 80%;
+        height: fit-content;
+        padding-left: 5%;
+        padding-right: 1rem;
+    }
 }

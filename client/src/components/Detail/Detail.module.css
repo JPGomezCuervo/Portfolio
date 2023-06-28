@@ -198,3 +198,46 @@
     font-size: 1.4rem;
 }
 
+@media screen and (max-width: 1060px) {
+    .RightContainer img {
+        height: 20rem;
+    }
+
+    .LeftContainer p {
+        font-size: 0.9rem;
+    }
+
+    .PrimaryButton {
+        margin-right: 3rem;
+    }
+
+    .PrimaryButton button{
+        font-size: .8rem ;
+    }
+
+    .SecondaryButton {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .RightContainer {
+        display: none;
+    }
+
+    .LeftContainer {
+        width: 100%;
+    }
+
+    .PrimaryButton {
+        margin-right: 4rem;
+    }
+
+    .FrontEndTags {
+        justify-content: center;
+    }
+    .BackEndTags {
+        justify-content: center;
+    }
+}
+
