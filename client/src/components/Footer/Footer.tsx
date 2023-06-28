@@ -70,6 +70,10 @@ const Footer: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
 
                 </div>
                 
+                <div className={style.OpenToWork}>
+                    <h2>Open to work</h2>
+                    <h2>2023</h2>
+                </div>
             </div>
                 <h2>Open to work</h2>
                 <h2>2023</h2>

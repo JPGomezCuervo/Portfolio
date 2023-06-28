@@ -12,7 +12,7 @@
 
 .Footer  h3 {
     font-family: "Montserrat-SemiBold";
-    margin-left: 2rem;
+
     margin-bottom: 0;
     font-size: 1rem;
 }
@@ -22,6 +22,7 @@
     font-family: "Montserrat-Regular";
     font-size: .9rem;
     cursor: pointer;
+    padding: 0;
 
 }
 
@@ -50,4 +51,47 @@
     border-top: 3px solid #6F4AE7;
     display: flex;
     justify-content: space-evenly;  
+}
+
+.Navigation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.OpenToWork {
+    display: none;
+}
+
+@media screen and (max-width: 414px) {
+
+    
+    .Footer .LogosContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Footer  .Container {
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+    }
+
+    .Footer  .Container h3 {
+        margin: 0;
+        margin-top: 1.5rem;
+
+    }
+
+    .Footer  .Container ul {
+        padding-left: 0;
+    }
+
+    .OpenToWork {
+        display: initial;
+    }
+
+    .Footer .Container h2 {
+        display: none;
+    }
 }
