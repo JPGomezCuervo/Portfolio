@@ -44,6 +44,7 @@
 }
 
 @media screen and (min-width: 1920px) {
+
     .LeftContainer {
         padding-left: 12%;
         width: 45%;
@@ -57,11 +58,48 @@
         font-size: 3rem;
         width: 70%;
     }
-    .RightContainer {
-        /* padding-left: 10%; */
-    }
+
     .RightContainer img {
         height: 32rem;
     }
     
+}
+
+@media screen and (max-width: 414px) {
+
+    .MainContainer {
+        flex-direction: column-reverse;
+    }
+
+    .LeftContainer {
+        padding: 0;
+        width: 100%;
+        height: 60%;
+    }
+
+    .LeftContainer h1 {
+        font-size: 3.5rem;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .LeftContainer h3 {
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .RightContainer {
+        width: 100%;
+        height: 30%;
+        padding: 0;
+        /* padding-bottom: 30%; */
+    }
+
+    .RightContainer img {
+        height: 18rem;
+    }
+
 }
