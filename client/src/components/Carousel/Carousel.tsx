@@ -4,6 +4,8 @@ import Experience from "../Experience/Experience";
 import Tecnologies from "../Tecnologies/Tecnologies";
 import WhoIAm from "../WhoIAm/WhoIAm";
 import arrow from "../../assets/icons/icons8-arrow.svg";
+
+
 const Carousel: FC = () => {
     
     const [activeIndex, setActiveIndex] = useState(0);

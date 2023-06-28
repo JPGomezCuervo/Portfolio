@@ -8,6 +8,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer/Footer";
 import Carousel from "./components/Carousel/Carousel";
 import Details from "./components/Details/Details";
+import calculateOffset from "./utils/functions";
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
   useEffect(() => {
     if (projectsClick && projectsRef.current) {
       const elementRect = projectsRef.current.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset;
+      const absoluteElementTop = elementRect.top + window.scrollY;
       const offset = 85;
   
       window.scroll({
@@ -48,7 +49,7 @@ function App() {
   useEffect(() => {
     if (contactMeClick && contactMeRef.current) {
       const elementRect = contactMeRef.current.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset;
+      const absoluteElementTop = elementRect.top + window.scrollY;
       const offset = 50;
   
       window.scroll({
@@ -59,20 +60,13 @@ function App() {
     }
   }, [contactMeClick, contactMeRef]);
 
-  useEffect(()=> {
-    window.scroll({
-      left: 0,
-      top: 0,
-      behavior:"auto"
-    })
-  }, [])
-
+  
   useEffect(() => {
     if (whoIAmClick && projectsRef.current) {
       const elementRect = projectsRef.current.getBoundingClientRect();
-      const absoluteElementTop = elementRect.top + window.pageYOffset;
-      const offset = 610;
-  
+      const absoluteElementTop = elementRect.top + window.scrollY;
+      const height= document.documentElement.clientHeight;      
+      const offset = calculateOffset(height);
       window.scroll({
         top: absoluteElementTop - offset,
         behavior: "smooth"
@@ -80,6 +74,15 @@ function App() {
       setWhoIAmClick(false);
     }
   }, [whoIAmClick, whoIAmRef]);
+
+  
+  useEffect(()=> {
+    window.scroll({
+      left: 0,
+      top: 0,
+      behavior:"auto"
+    })
+  }, [])
   
   
   
@@ -97,7 +100,7 @@ function App() {
             </section>
           
 
-          
+
             <section ref={whoIAmRef}>
               <Carousel/>
             </section>
