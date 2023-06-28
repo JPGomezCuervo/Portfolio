@@ -48,11 +48,33 @@
     display: flex;
     align-items: center;
     height: fit-content;
-    margin-left: auto;
     margin-right: 2rem;
 }
 
 .LogosContainer img {
     margin-left: 1.5rem;
     height: 3rem;
+}
+
+.Header button {
+    width: 5%;
+    margin-left: auto;
+    background-color: white;
+    border-radius: .3rem;
+    padding: .2rem;
+    border: 2px solid #6F4AE7;
+    color: #6F4AE7;
+    font-family: "Montserrat-Bold";
+    font-size: .8rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.Header button:hover {
+    background-color: #6F4AE7;
+    color: white;
+}
+.Header button:active {
+    background-color:white;
+    color:#6F4AE7;
 }

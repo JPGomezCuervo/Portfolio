@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { useSelector } from "react-redux";
-import { selectLanguageJson } from "../../features/optionsSlice";
+import { selectLanguageJson, selectLanguage } from "../../features/optionsSlice";
 import style from "./NavBar.module.css";
 import gmailIcon from "../../assets/icons/gmail.svg";
 import linkedinIcon from "../../assets/icons/linkedin.svg";
@@ -25,6 +25,7 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
     const language = useSelector(selectLanguageJson);
     const URLs: URLType = URLJson;
     const {projects, contactMe, whoIAm} = language.navBar;
+    const languageName = useSelector(selectLanguage);
 
     const dispatch = useDispatch();
 
@@ -40,6 +41,8 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
 
         }, 200)
     }
+
+    const name = languageName === "english" ? "EN/ES" : "ES/EN";
     return (
         <header className={style.Header}>
 
@@ -52,7 +55,7 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
                 <li onClick={handleProjectClick}> {projects} </li>
                 <li onClick={handleContactMeClick}> {contactMe} </li>
             </ul>
-
+            <button onClick={() => dispatch(setLanguage())}>{name}</button>
             <div className={style.LogosContainer}>
                 <a href={URLs.github} target="_blank" rel="noreferrer">
                     <img src={githubIcon} alt=""/>
