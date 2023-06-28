@@ -44,6 +44,12 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
         }, 200)
     }
 
+    const handleUnchecked = () => {
+        if(inputRef.current){
+            inputRef.current.checked = false;
+        }
+    };
+
     const name = languageName === "english" ? "EN/ES" : "ES/EN";
     return (
         <header className={style.Header}>
@@ -78,7 +84,7 @@ const NavBar: FC<NavBarPropsType> = ({handleProjectClick, handleContactMeClick, 
             </input>
 
             <div className={style.DropMenuMobile}>
-                <ul>
+                <ul onClick={handleUnchecked}>
                     <li onClick={handleWhoIAmClick}> {whoIAm} </li>
                     <li onClick={handleProjectClick}> {projects} </li>
                     <li onClick={handleContactMeClick}> {contactMe} </li>
