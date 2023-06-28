@@ -108,3 +108,19 @@
         height: 65%;
     }
 }
+
+@media screen and (max-width: 360px) {
+
+    .LeftContainer {
+        height: 63%;
+    }
+    .LeftContainer h1 {
+       letter-spacing: 0;
+       margin-top: 20%;
+       margin-bottom: 8%;
+    }
+    .LeftContainer h3 {
+        width: 90%;
+    }
+
+}
