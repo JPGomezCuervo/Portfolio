@@ -65,7 +65,7 @@
     
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 1000px) {
 
     .MainContainer {
         flex-direction: column-reverse;
@@ -78,14 +78,15 @@
     }
 
     .LeftContainer h1 {
-        font-size: 3.5rem;
+        letter-spacing: 0;
+        font-size: 4.5rem;
         width: 100%;
         text-align: center;
         
     }
 
     .LeftContainer h3 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         width: 80%;
         text-align: center;
         margin: 0 auto;
@@ -98,7 +99,56 @@
     }
 
     .RightContainer img {
+        height: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .LeftContainer h3 {
+        font-size: 1.8rem;
+    }
+
+    .RightContainer {
+        width: 100%;
+        height: 30%;
+        padding: 0;
+    }
+
+    .RightContainer img {
         height: 18rem;
+    }
+}
+
+
+@media screen and (max-width: 490px) {
+    .RightContainer img {
+        height: 17rem;
+    } 
+
+    .LeftContainer h1 {
+        font-size: 3.5rem;
+    }
+    .LeftContainer h3 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    .LeftContainer h1 {
+        font-size: 3.4rem;  
+    }
+
+    .LeftContainer h3 {
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .RightContainer img {
+        height: 17rem;
     }
 
 }
