@@ -186,3 +186,146 @@
     background-color: white;
     color: #6F4AE7;
 }
+
+@media screen and (min-width: 1920px){
+    .LeftContainer {
+        margin-left: 12%;
+    }
+    .LeftContainer h2 {
+        font-size: 3.5rem;
+    }
+    .LeftContainer h3 {
+        font-size: 2.5rem
+    }
+    .LeftContainer h4 {
+        font-size: 1.5rem
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    
+    .LeftContainer h2 {
+        font-family: "Montserrat-ExtraBold";
+        color: white;
+        font-size:3.2rem;
+        font-weight: 200;
+        padding-top: 1rem;
+        margin-right: 10rem;
+        margin-bottom: 4rem;
+        text-align: left;
+        
+    }
+    
+    .LeftContainer h3 {
+        color: white;
+        font-family: "Montserrat-SemiBold";
+        font-size: 2.5rem;
+        font-weight: 200;
+        width: 30rem;
+        text-align: left;
+    }
+    
+    .LeftContainer h4 {
+        font-family: "Montserrat-Light";
+        font-size: 1.5rem;
+        font-weight: 200;
+        color: white;
+        text-align: left;
+        width: 28rem;
+    }
+}
+
+@media screen and (max-width: 1156px) {
+    .LeftContainer h2 {
+        font-size: 3rem;
+    }
+    .LeftContainer h3 {
+        font-size: 2.4rem;
+    }
+    
+    .LeftContainer h4 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .FormContainer {
+        transform: scale(.95)
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .LeftContainer {
+        width: 46%;
+        margin-left: 3.5rem;
+    }
+    .LeftContainer h2 {
+        font-size: 3rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    .LeftContainer h3 {
+        font-size: 2rem;
+        width: 100%;
+    }
+    
+    .LeftContainer h4 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .LeftContainer {
+        margin: 0 auto;
+        width: 70%;
+    }
+    .LeftContainer h2 {
+        font-size: 3rem;
+        width: 100%;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .LeftContainer h3 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+
+    }
+    
+    .LeftContainer h4 {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .MainContainer {
+        display: block;
+        height: fit-content;
+    }
+    .RightContainer {
+        height: fit-content;
+        margin: 0 auto;
+        padding: 0;
+        width: fit-content;
+    }
+    .FormContainer {
+        margin: 0;
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .LeftContainer h2 {
+        font-size: 2.5rem;
+    }
+    .LeftContainer h3 {
+        font-size: 1.6rem;
+
+    }
+    
+    .LeftContainer h4 {
+        font-size: 1rem;
+    }
+}
+
