@@ -31,3 +31,9 @@
 
     
 }
+
+@media screen and (max-width:1000px) {
+    .Background {
+        width: 100%;
+    }
+}

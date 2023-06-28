@@ -13,9 +13,7 @@ const WhoIAm: FC = () => {
             <div className={style.MainContainer}>
 
                 <div className={style.LeftContainer}>
-                    <h2>
-                        {title}
-                    </h2>
+                    <h2>{title}</h2>
                     <img src={image} alt=""/>
                 </div>
 
