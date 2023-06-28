@@ -12,8 +12,8 @@
     font-family: "Montserrat-Bold";
     list-style: none;
     display: flex;
-    width: 48%;
-    gap: 8%;
+    width: fit-content;
+    gap: 10%;
 }
 
 .Header li {
@@ -32,6 +32,7 @@
     margin-left: 2rem;
     height: 2rem;
     cursor: pointer;
+    width: fit-content;
 }
 
 .Logo h2 {
@@ -41,6 +42,7 @@
     margin: 0;
     height: 100%;
     line-height: 2rem;
+    white-space: nowrap;
     
 }
 
@@ -78,3 +80,34 @@
     background-color:white;
     color:#6F4AE7;
 }
+
+@media screen and (max-width: 1140px) {
+    .Logo {
+        transform: scale(.8);
+    }
+    .Header ul {
+        gap: 5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Header ul {
+        transform: scale(.85);
+        padding: 0;
+    }
+
+    .Header button {
+        transform: scale(.85);
+        width: 6%;
+    }
+
+    .LogosContainer {
+        transform: scale(.85);
+        margin: 0;
+    }
+
+    .LogosContainer img {
+        margin-left: 2%;
+    }
+}
+
