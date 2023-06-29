@@ -29,7 +29,7 @@ const Tecnologies: FC = () => {
                 </div>
 
                 <div className={style.RightContainer}>
-
+                
                     {tecnologies.frontEnd.map((tag, index) => {
                         return <FrontTag key={index} frontEnd={tag}/>
                     })}

@@ -20,10 +20,9 @@
     font-family: "Montserrat-ExtraBold";
     font-size:3rem;
     font-weight: 200;
-    margin-right: 10rem;
-    margin-top: .5rem;
-    margin-bottom: 2rem;
+    margin-left: 5.3rem;
     text-align: left;
+    margin-top: .5rem;
     
 }
 
@@ -60,8 +59,62 @@
 }
 
 @media screen and (max-width:1000px) {
+
     .MainContainer {
         display: flex;
         flex-direction: column;
     }
+
+    .LeftContainer {
+        width: 100%;
+    }
+
+    .LeftContainer img {
+        border-radius: 90%;
+        height: 15rem;
+        margin-top: 1vh;
+    }
+
+    .LeftContainer h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 2vh;
+    }
+
+    .RightContainer {
+        width: 90%;
+        justify-content: center;
+        padding: 0;
+        margin: 0 auto;
+
+    }
+
+    .RightContainer {
+        transform: scale(.7);
+        padding-bottom: -auto;
+    }
 }
+
+@media screen and (max-width: 690px) {
+    .RightContainer {
+        width: 85%;
+    }
+    .LeftContainer img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .LeftContainer img {
+        height: 12rem;
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .RightContainer {
+        transform: scale(.6);
+    }
+}
+
