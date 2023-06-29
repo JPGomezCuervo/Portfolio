@@ -53,7 +53,8 @@
     .LeftContainer img {
         height: 35rem;
         position: relative;
-        bottom: 7%;
+        bottom: 18%;
+        right: 3%;
     }
 
     .RightContainer h3 {
@@ -67,18 +68,64 @@
     }
 }
 
-@media screen and (max-width:1150px) {
-    .RightContainer h3 {
-        font-size: 1.3rem;
+@media screen and (max-width:1000px) {
+
+    .MainContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .LeftContainer {
+        width: 100%;
     }
 
     .LeftContainer img {
-        height: 25rem;
+        border-radius: 90%;
+        height: 20rem;
+    }
+
+    .LeftContainer h2 {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 4vh;
+    }
+
+    .RightContainer {
+        width: 100%;
+    }
+
+    .RightContainer h3 {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 4%;
     }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:560px) { 
     .RightContainer h3 {
-        font-size:  1.1rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        width: 85%;
+    }
+
+    .LeftContainer h2 {
+        font-size: 2rem;
     }
 }
+
+@media screen and (max-width:450px) {
+    .LeftContainer img {
+        height: 17rem;
+    }
+
+    .RightContainer h3 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        width: 90%;
+    }
+} 
