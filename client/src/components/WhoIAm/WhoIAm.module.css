@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (max-width:539px) { 
+@media screen and (max-width:560px) { 
     .RightContainer h3 {
         font-size: 1.2rem;
         line-height: 2rem;
