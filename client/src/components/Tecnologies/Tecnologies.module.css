@@ -113,9 +113,14 @@
 }
 
 @media screen and (max-width:539px) { 
-    
+
     .LeftContainer h2 {
         font-size: 2rem;
+    }
+
+    .RightContainer {
+        position: relative;
+        top: -10%;
     }
 }
 
