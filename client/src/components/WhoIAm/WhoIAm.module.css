@@ -123,6 +123,10 @@
         line-height: 2rem;
         width: 85%;
     }
+
+    .LeftContainer h2 {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width:381px) { 

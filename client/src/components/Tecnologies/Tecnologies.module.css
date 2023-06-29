@@ -112,6 +112,13 @@
     }
 }
 
+@media screen and (max-width:539px) { 
+    
+    .LeftContainer h2 {
+        font-size: 2rem;
+    }
+}
+
 @media screen and (max-width: 370px) {
     .RightContainer {
         transform: scale(.6);
