@@ -85,3 +85,9 @@
     margin: auto 0;
     margin-right: 10%;
 }
+
+@media screen and (min-width:1920px) {
+    .Container img {
+        width: 99.6%
+    }
+}
