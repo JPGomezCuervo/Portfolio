@@ -1,6 +1,25 @@
+.Prueba {
+  background-color: red;
+  width: 0; /* Cambia el ancho inicial a 0 */
+  height: .5vh;
+  position: fixed;
+  z-index: 6;
+  animation: loading 2s linear forwards; /* Nombre de la animación, duración y función de aceleración */
+}
+@keyframes loading {
+    from {
+      width: 0; /* Ancho inicial de la barra de carga */
+    }
+    to {
+      width: 100%; /* Ancho final de la barra de carga */
+    }
+  }
+  
+
+
 .Header {
     position: fixed;
-    z-index: 9999;
+    z-index: 5;
     background-color: white;
     display: flex;
     width: 100%;

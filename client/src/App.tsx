@@ -15,6 +15,8 @@ function App() {
   const [ projectsClick, setProjectsClick ] = useState(false);
   const [ whoIAmClick, setWhoIAmClick ] = useState(false);
   const [ contactMeClick, setContactMeClick ] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
 
   const projectsRef = useRef<HTMLDivElement>(null);
   const whoIAmRef = useRef<HTMLDivElement>(null);
@@ -82,6 +84,8 @@ function App() {
       top: 0,
       behavior:"auto"
     })
+
+    setIsLoading(false);
   }, [])
   
   
@@ -89,7 +93,7 @@ function App() {
 
   return (
     <div className= "App">
-      <NavBar handleProjectClick={handleProjectClick} handleContactMeClick={handleContactMeClick} handleWhoIAmClick={handleWhoIAmClick}/>
+      <NavBar handleProjectClick={handleProjectClick} handleContactMeClick={handleContactMeClick} handleWhoIAmClick={handleWhoIAmClick} isLoading={isLoading} setIsLoading={setIsLoading} />
 
       <Routes>
 
