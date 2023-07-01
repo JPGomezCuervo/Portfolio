@@ -130,6 +130,7 @@
 
 .TecnologiesContainer {
     margin-top: 2rem;
+    width: 100%;
 }
 
 .TecnologiesContainer h3 {
@@ -140,6 +141,7 @@
 
 .FrontEndTags {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .FrontEndTags div {
@@ -165,6 +167,7 @@
 
 .BackEndTags {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .BackEndTags span {
@@ -220,24 +223,97 @@
     }
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:900px) {
     .RightContainer {
         display: none;
     }
 
     .LeftContainer {
+        margin: 0 auto;
+        width: 75%;
+    }
+
+    .LeftContainer p {
         width: 100%;
+        
+    }
+
+    .TecnologiesContainer {
+        transform: scale(.9);
+        margin: 0 auto;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .TecnologiesContainer {
+        transform: scale(.8);
+        
+    }
+}
+
+@media screen and (max-width:509px) {
+
+    .LeftContainer p {
+        font-size: .82rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        word-spacing: -.08rem;
+    }
+
+    .TecnologiesContainer h3 {
+        font-size: 1.7rem;
+    }
+    .FrontEndTags {
+        font-size: .9rem;
+    }
+
+    .BackEndTags {
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .LeftContainer h2 {
+        font-size: 2.5rem;
+    }
+
+    .PrimaryButton img {
+        height: 1rem;
+        margin-right: .5rem;
+    }
+    .PrimaryButton button {
+        font-size: .7rem ;
+        
+    }
+    .SecondaryButton img {
+        height: 1rem;
+        margin-right: .5rem;
+    }
+    .SecondaryButton button {
+        font-size: .7rem ;
+        
+    }
+}
+
+
+@media screen and (max-width:360px) {
+
+    .SecondaryButton {
+        padding: 0;
+    }
+
+    .SecondaryButton img {
+        margin-right: 1%;
     }
 
     .PrimaryButton {
-        margin-right: 4rem;
+        padding: 0;
+        padding-left: 2%;
     }
 
-    .FrontEndTags {
-        justify-content: center;
-    }
-    .BackEndTags {
-        justify-content: center;
+    .PrimaryButton img {
+        margin-right: 1%;
     }
 }
 
