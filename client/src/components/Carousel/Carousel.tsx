@@ -1,4 +1,4 @@
-import { FC, useEffect, useState, useRef } from "react";
+import React, { FC, useEffect, useState, useRef } from "react";
 import style from  "./Carousel.module.css";
 import Experience from "../Experience/Experience";
 import Tecnologies from "../Tecnologies/Tecnologies";
@@ -24,6 +24,14 @@ const Carousel: FC = () => {
             newIndex = 0;
         }
         setActiveIndex(newIndex);
+    }
+
+    const handleNextSlide = () => {
+      updateIndex(activeIndex + 1)
+
+    }
+    const handlePrevSlide = () => {
+      updateIndex(activeIndex - 1)
     }
 
     useEffect(() => {
@@ -81,6 +89,7 @@ const Carousel: FC = () => {
                 ))}
             </div>
             <div className={style.Background}>
+                <img className={`${style.LeftArrow} ${style.Arrow}`} src={arrow} alt="" onClick={handlePrevSlide}/>
                 <div className={`${style.Rombos} ${activeIndex === 0 ? style.ActiveIndex : ""}`} onClick={()=> {
                     updateIndex(0);
                 }}></div>
@@ -90,6 +99,8 @@ const Carousel: FC = () => {
                 <div className={`${style.Rombos} ${activeIndex === 2 ? style.ActiveIndex : ""}`} onClick={()=> {
                     updateIndex(2);
                 }}></div>
+                <img className={`${style.RightArrow} ${style.Arrow}`} src={arrow} alt="" onClick={handleNextSlide}/>
+
             </div>
         </>
     )

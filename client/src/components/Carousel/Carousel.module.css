@@ -12,14 +12,32 @@
     justify-content: center;
     padding-right: 4rem;
     padding-bottom: 1.2rem;
+    align-items: center;
+    gap: .5%;
 }
+
+.Arrow {
+    height: 2rem;
+    cursor: pointer;
+    
+}
+
+.LeftArrow {
+    transform: rotate(-180deg);
+    /* margin-left: 2.5%; */
+}
+.RightArrow {
+    /* margin-left: 2.5%; */
+}
+
 .Rombos {
     display: block;
     width: .6rem;
     height: .6rem;
     background-color: transparent;
     transform: rotate(45deg);
-    margin-left: 1rem;
+    margin-left: .5%;
+    margin-right: .5%;
     border: 2px solid black;
     cursor: pointer;
 }
