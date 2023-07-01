@@ -97,3 +97,63 @@
         width: 99.4%
     }
 }
+
+@media screen and (max-width:743px) {
+    .Container img {
+        width: 99.3%
+    }
+}
+
+@media screen and (max-width:568px) {
+    
+    .RedDot {
+        width: .6rem;
+        height: .6rem;
+    }
+    .YellowDot {
+        width: .6rem;
+        height: .6rem;
+    }
+    .GreenDot {
+        width: .6rem;
+        height: .6rem;
+    }
+
+    .SearchBar {
+        width: 40%;
+        height: 1rem;
+        margin-left: 15%;
+    }
+    
+}
+
+@media screen and (max-width:460px) {
+    .RedDot {
+        width: .5rem;
+        height: .5rem;
+    }
+    .YellowDot {
+        width: .5rem;
+        height: .5rem;
+    }
+    .GreenDot {
+        width: .5rem;
+        height: .5rem;
+    }
+
+    .SearchBar {
+        width: 35%;
+        height: .8rem;
+        margin-left: 15%;
+    }
+
+}
+@media screen and (max-width:390px) {
+    .Container img {
+        width: 98.4%;
+
+    }
+}
+
+
+
