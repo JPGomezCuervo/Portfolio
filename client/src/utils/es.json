@@ -88,7 +88,7 @@
                 "frontEnd":["TypeScript", "React", "CSS", "Email.js"],
                 "backEnd": []
             },
-            "deploy":"https://muscle-lab-six.vercel.app/",
+            "deploy":"https://portfolio-juan-kappa.vercel.app/",
             "sourceCode": "https://github.com/JPGomezCuervo/Portfolio"
         },
         "musclelab": {
@@ -100,7 +100,7 @@
                 "frontEnd":["React", "Redux", "Auth0", "Email.js", "CSS"],
                 "backEnd": ["Express","PostgreSQL", "Stripe", "Sequelize", "JWT"]
             },
-            "deploy":"https://muscle-lab-six.vercel.app/",
+            "deploy":"https://muscle-lab-gpmq.vercel.app/",
             "sourceCode": "https://github.com/JPGomezCuervo/MuscleLab"
         },
         "doggofinder": {
@@ -112,7 +112,7 @@
                 "frontEnd":["React", "Redux", "CSS" ],
                 "backEnd": ["Express","PostgreSQL", "Sequelize"]
             },
-            "deploy":"https://muscle-lab-six.vercel.app/",
+            "deploy":"https://muscle-lab-gpmq.vercel.app/",
             "sourceCode": "https://github.com/JPGomezCuervo/API-DOG"
         }
     }
