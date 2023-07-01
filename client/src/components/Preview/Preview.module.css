@@ -91,3 +91,9 @@
         width: 99.6%
     }
 }
+
+@media screen and (max-width:997px) {
+    .Container img {
+        width: 99.4%
+    }
+}
