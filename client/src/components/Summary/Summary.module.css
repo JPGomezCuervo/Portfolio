@@ -79,9 +79,10 @@
 
     .LeftContainer h1 {
         letter-spacing: 0;
-        font-size: 4.5rem;
+        font-size: 4rem;
         width: 100%;
         text-align: center;
+        margin-top: 4%;
         
     }
 
@@ -99,14 +100,14 @@
     }
 
     .RightContainer img {
-        height: 20rem;
+        height: 18rem;
     }
 }
 
 @media screen and (max-width: 768px) {
 
     .LeftContainer h3 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
     .RightContainer {
@@ -116,21 +117,21 @@
     }
 
     .RightContainer img {
-        height: 18rem;
+        height: 16rem;
     }
 }
 
 
 @media screen and (max-width: 490px) {
     .RightContainer img {
-        height: 17rem;
+        height: 14rem;
     } 
 
     .LeftContainer h1 {
         font-size: 3.5rem;
     }
     .LeftContainer h3 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 }
 
