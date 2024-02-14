@@ -52,7 +52,7 @@ const Preview: FC<PreviewType> = ({ nameParam }) => {
                             <div className={style.YellowDot}></div>
                             <div className={style.GreenDot}></div>
                             <div className={style.SearchBar}></div>
-                        </div>
+                            </div>
                             <img src={image} alt="" />
                         </>
                     )

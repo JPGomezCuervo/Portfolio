@@ -1,4 +1,4 @@
-.Prueba {
+p.Prueba {
   background-color: red;
   width: 0; /* Cambia el ancho inicial a 0 */
   height: .5vh;
@@ -124,6 +124,7 @@
     box-shadow: 0 .4rem 0.4rem rgba(99, 99, 99, 0.7);
     margin-top: .5vh;
 }
+
 .DropMenuMobile li {
     list-style: none;
     font-family: "Montserrat-Bold";

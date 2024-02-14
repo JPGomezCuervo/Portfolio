@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser"
 import validation from "./validation";
 
 
+
 const ContactMe: FC = () => {
 
     const EMAIL_JS_API = process.env.REACT_APP_EMAIL_JS_API || "";
@@ -21,7 +22,7 @@ const ContactMe: FC = () => {
     const [ nameInput, setNameInput ] = useState("");
     const [ emailInput, setEmailInput ] = useState("");
     const [ messageInput, setMessageInput ] = useState("");
-    const [ successfullyResponse, setSuccessfullyResponse ] = useState("");
+    const [ successfullyResponse, setSuccessfullyResponse ] = useState("lolis");
     const [ rejectedResponse, setRejectedResponse ] = useState("");
     const [ isAble, setIsAble ] = useState(false);
     const [ errors, setErrors ] = useState({

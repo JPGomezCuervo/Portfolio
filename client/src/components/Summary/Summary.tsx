@@ -2,7 +2,7 @@ import { FC } from "react";
 import style from "./Summary.module.css";
 import { selectLanguageJson } from "../../features/optionsSlice";
 import { useSelector } from "react-redux";
-import photograph from "../../assets/images/summary/photograph.jpg"
+import photograph from "../../assets/images/summary/photograph.jpg";
 
 const Summary: FC = () => {
 

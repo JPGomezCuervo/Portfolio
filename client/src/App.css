@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-@font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('assets/fonts/Montserrat-Regular.ttf') ;
-  font-weight: normal;
-  font-style: normal;
-}
 
 body{
   overflow-x: hidden;
@@ -18,6 +12,12 @@ a{
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('assets/fonts/Montserrat-Regular.ttf') ;
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face{
   font-family: 'Montserrat-Light';
   src: url('assets/fonts/Montserrat-Light.ttf');
